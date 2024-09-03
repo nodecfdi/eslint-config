@@ -3,26 +3,53 @@
   "description": "Configuración base de Eslint para proyectos NodeCfdi",
   "version": "1.10.4",
   "type": "module",
-  "main": "",
-  "module": "",
-  "types": "",
+  "module": "./dist/esm/nodecfdi_config.js",
   "files": [
     "dist"
   ],
-  "exports": {},
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/nodecfdi_config.d.ts",
+        "default": "./dist/esm/nodecfdi_config.js"
+      }
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/esm/types.d.ts",
+        "default": "./dist/esm/types.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "imports": {
     "#src/*": "./src/*.js"
   },
   "scripts": {
-    "build": "tsc --noEmit && tsup"
+    "prepare": "is-in-ci || husky",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "changelog": "auto-changelog -p && git add CHANGELOG.md",
+    "prebuild": "pnpm format:check && pnpm typecheck",
+    "build": "tshy",
+    "release": "np",
+    "version": "pnpm run build && pnpm run changelog"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@nodecfdi/prettier-config": "^1.2.0",
     "@nodecfdi/tsconfig": "^1.7.0",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/eslint__js": "^8.42.3",
+    "auto-changelog": "^2.4.0",
     "eslint": "^9.9.1",
+    "husky": "^9.1.5",
+    "is-in-ci": "^1.0.0",
+    "np": "^10.0.7",
     "prettier": "^3.3.3",
+    "tshy": "^3.0.2",
     "typescript": "^5.5.4"
   },
   "dependencies": {
@@ -74,5 +101,30 @@
     ]
   },
   "prettier": "@nodecfdi/prettier-config",
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.9.0",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "auto-changelog": {
+    "template": "keepachangelog",
+    "hideCredit": true
+  },
+  "np": {
+    "message": "chore(release): :tada: %s",
+    "tag": "latest",
+    "branch": "main",
+    "yolo": true
+  },
+  "tshy": {
+    "selfLink": false,
+    "dialects": [
+      "esm"
+    ],
+    "exports": {
+      ".": "./src/nodecfdi_config.ts",
+      "./types": "./src/types.ts",
+      "./package.json": "./package.json"
+    }
+  }
 }
