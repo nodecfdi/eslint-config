@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import { allFilesSupported } from '#src/constants';
 
-export const simpleImportSortConfig: tseslint.ConfigWithExtends = {
+export const simpleImportSortConfig: ConfigWithExtends = {
   files: [allFilesSupported],
   plugins: {
     'simple-import-sort': simpleImportSort,

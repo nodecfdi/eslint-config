@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import adonisJSPlugin from '@adonisjs/eslint-plugin';
 import { supportedFileTypes } from '#src/constants';
 
-export const adonisjsConfig: tseslint.ConfigWithExtends[] = [
+export const adonisjsConfig: ConfigWithExtends[] = [
   {
     files: [supportedFileTypes],
     plugins: {

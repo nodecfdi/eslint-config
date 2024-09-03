@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
 import { allJsExtensions } from '#src/constants';
 
-export const vueConfig: tseslint.ConfigWithExtends[] = [
+export const vueConfig: ConfigWithExtends[] = [
   ...pluginVue.configs['flat/recommended'],
   {
     files: ['**/*.vue'],

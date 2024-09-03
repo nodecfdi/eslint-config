@@ -1,12 +1,12 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import { allFilesSupported } from '#src/constants';
 
-export const stylisticConfig: tseslint.ConfigWithExtends = {
+export const stylisticConfig: ConfigWithExtends = {
   files: [allFilesSupported],
   plugins: {
     '@stylistic': stylistic,
-  } as tseslint.ConfigWithExtends['plugins'],
+  } as ConfigWithExtends['plugins'],
   rules: {
     // Prettier doesn't have strong opinions about emptyLines. See: https://prettier.io/docs/en/rationale.html#empty-lines.
     '@stylistic/padding-line-between-statements': [

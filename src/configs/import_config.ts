@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import eslintPluginImportX from 'eslint-plugin-import-x';
 import { allFilesSupported, allJsExtensions } from '#src/constants';
 
-export const importConfig: tseslint.ConfigWithExtends[] = [
+export const importConfig: ConfigWithExtends[] = [
   eslintPluginImportX.flatConfigs.recommended,
   eslintPluginImportX.flatConfigs.typescript,
   {

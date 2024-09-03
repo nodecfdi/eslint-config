@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import pluginPromise from 'eslint-plugin-promise';
 import { allFilesSupported } from '#src/constants';
 
-export const promiseConfig: tseslint.ConfigWithExtends[] = [
+export const promiseConfig: ConfigWithExtends[] = [
   pluginPromise.configs['flat/recommended'],
   {
     files: [allFilesSupported],

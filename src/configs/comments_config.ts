@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import { allFilesSupported } from '#src/constants';
 
-export const commentsConfig: tseslint.ConfigWithExtends[] = [
+export const commentsConfig: ConfigWithExtends[] = [
   comments.recommended,
   {
     files: [allFilesSupported],

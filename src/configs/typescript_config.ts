@@ -1,8 +1,8 @@
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported, supportedFileTypeJs } from '#src/constants';
 
-export const typescriptConfig: tseslint.ConfigWithExtends[] = [
+export const typescriptConfig: ConfigWithExtends[] = [
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,

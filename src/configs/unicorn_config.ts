@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import { allFilesSupported } from '#src/constants';
 
-export const unicornConfig: tseslint.ConfigWithExtends[] = [
+export const unicornConfig: ConfigWithExtends[] = [
   eslintPluginUnicorn.configs['flat/recommended'],
   {
     files: [allFilesSupported],

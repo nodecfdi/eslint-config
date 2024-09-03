@@ -1,7 +1,7 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
-export const eslintBaseConfig: tseslint.ConfigWithExtends = {
+export const eslintBaseConfig: ConfigWithExtends = {
   files: [allFilesSupported],
   rules: {
     'array-callback-return': ['error', { allowImplicit: true, checkForEach: true }],

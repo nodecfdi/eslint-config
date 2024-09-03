@@ -1,7 +1,7 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allJsExtensions } from '#src/constants';
 
-export const overridesConfig: tseslint.ConfigWithExtends[] = [
+export const overridesConfig: ConfigWithExtends[] = [
   {
     files: ['**/types/**/*.ts', '**/types.ts'],
     rules: {

@@ -1,8 +1,8 @@
-import tseslint from 'typescript-eslint';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import vitest from '@vitest/eslint-plugin';
 import { allJsExtensions } from '#src/constants';
 
-export const vitestConfig: tseslint.ConfigWithExtends = {
+export const vitestConfig: ConfigWithExtends = {
   files: [
     `**/*.{test,spec}.{${allJsExtensions}}`,
     `**/tests/**/*.{${allJsExtensions}}`,
