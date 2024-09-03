@@ -1,7 +1,7 @@
-import { allFilesSupported } from '../constants.js';
-import { defineConfig } from '../define_config.js';
+import tseslint from 'typescript-eslint';
+import { allFilesSupported } from '#src/constants';
 
-export const eslintBaseConfig = defineConfig({
+export const eslintBaseConfig: tseslint.ConfigWithExtends = {
   files: [allFilesSupported],
   rules: {
     'array-callback-return': ['error', { allowImplicit: true, checkForEach: true }],
@@ -113,4 +113,4 @@ export const eslintBaseConfig = defineConfig({
     'require-atomic-updates': ['error', { allowProperties: true }],
     'strict': ['error', 'never'], // we are using the eslint-plugin-arrow-return-style version
   },
-});
+};

@@ -4,7 +4,7 @@ export const jsExtensions = ['.js', '.jsx', '.mjs', '.cjs'];
 
 export const jsAndTsExtensions = [...typescriptExtensions, ...jsExtensions];
 
-export const allJsExtensions = 'js,mjs,cjs,ts,mts,cts';
+export const allJsExtensions = jsAndTsExtensions.map((item) => item.replace('.', '')).join(',');
 
 export const supportedFileTypes = `**/*.{${allJsExtensions}}`;
 
@@ -33,4 +33,9 @@ export const ignores = [
   '**/package.json',
   '**/*.min.*',
   '**/.pnpm-store/**',
+  'LICENSE*',
+  'CHANGELOG.md',
+  '__snapshots__',
+  '!.github',
+  '!.vscode',
 ];

@@ -1,6 +1,7 @@
-import { defineConfig } from '../define_config.js';
+import tseslint from 'typescript-eslint';
+import { allJsExtensions } from '#src/constants';
 
-export const overridesConfig = defineConfig([
+export const overridesConfig: tseslint.ConfigWithExtends[] = [
   {
     files: ['**/types/**/*.ts', '**/types.ts'],
     rules: {
@@ -10,14 +11,17 @@ export const overridesConfig = defineConfig([
     },
   },
   {
-    files: ['**/tests/**/*.ts'],
+    files: [
+      `**/*.{test,spec}.{${allJsExtensions}}`,
+      `**/tests/**/*.{${allJsExtensions}}`,
+      `**/__tests__/**/*.{${allJsExtensions}}`,
+    ],
     rules: {
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       'unicorn/no-anonymous-default-export': 'off',
       'import-x/no-unassigned-import': 'off',
-      'sonarjs/no-duplicate-string': 'off',
       '@typescript-eslint/unbound-method': 'off',
     },
   },
-]);
+];

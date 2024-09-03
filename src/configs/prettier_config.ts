@@ -1,13 +1,13 @@
-import eslintPrettierConfig from 'eslint-config-prettier';
-import { allFilesSupported } from '../constants.js';
-import { defineConfig } from '../define_config.js';
+import tseslint from 'typescript-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import { allFilesSupported } from '#src/constants';
 
-export const prettierConfig = defineConfig([
-  eslintPrettierConfig,
+export const prettierConfig: tseslint.ConfigWithExtends[] = [
+  eslintConfigPrettier,
   {
     files: [allFilesSupported],
     rules: {
       curly: ['error', 'all'],
     },
   },
-]);
+];

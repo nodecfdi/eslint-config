@@ -1,16 +1,14 @@
-import promisePlugin from 'eslint-plugin-promise';
-import { allFilesSupported } from '../constants.js';
-import { defineConfig } from '../define_config.js';
+import tseslint from 'typescript-eslint';
+import pluginPromise from 'eslint-plugin-promise';
+import { allFilesSupported } from '#src/constants';
 
-export const promiseConfig = defineConfig({
-  files: [allFilesSupported],
-  plugins: {
-    promise: promisePlugin,
+export const promiseConfig: tseslint.ConfigWithExtends[] = [
+  pluginPromise.configs['flat/recommended'],
+  {
+    files: [allFilesSupported],
+    rules: {
+      'promise/prefer-await-to-then': 'error',
+      'promise/valid-params': 'error',
+    },
   },
-  rules: {
-    'promise/param-names': 'error',
-    'promise/prefer-await-to-callbacks': 'off',
-    'promise/prefer-await-to-then': 'error',
-    'promise/valid-params': 'error',
-  },
-});
+];

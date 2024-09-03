@@ -1,3 +1,5 @@
+import { type TSESLint } from '@typescript-eslint/utils';
+
 export type NodecfdiSettings = {
   /**
    * Vitest support.
@@ -12,22 +14,9 @@ export type NodecfdiSettings = {
    */
   vue?: boolean;
   /**
-   * Experimental support to use tseslint projectService
+   * Typescript eslint project service option
    */
-  experimentalProjectService?: string;
-  /**
-   * This parameter allows you to override the paths for some Nodecfdi settings.
-   */
-  pathsOverrides?: {
-    /**
-     * With this setting, if you have multiple tsconfig.json files in your project (like tsconfig.json, tsconfig.eslint.json, tsconfig.node.json, etc...) you can specify which config NodeCfdi will pickup. You can also specify a list of paths, see: https://typescript-eslint.io/linting/typed-linting/monorepos/#one-tsconfigjson-per-package-and-an-optional-one-in-the-root.
-     */
-    tsconfigLocation?: string | string[];
-    /**
-     * This setting overrides the default Nodecfdi filepaths for test files. It accepts an array of filepaths, dictaced by minimatch syntax. Nodecfdi will apply Vitest rules only on these files.
-     */
-    tests?: string[];
-  };
+  projectService: TSESLint.FlatConfig.ParserOptions['projectService'];
   /**
    * This setting apply some ignore patterns to the whole config.
    */

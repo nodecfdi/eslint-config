@@ -1,12 +1,12 @@
-import adonisJsPlugin from '@adonisjs/eslint-plugin';
-import { supportedFileTypes } from '../constants.js';
-import { defineConfig } from '../define_config.js';
+import tseslint from 'typescript-eslint';
+import adonisJSPlugin from '@adonisjs/eslint-plugin';
+import { supportedFileTypes } from '#src/constants';
 
-export const adonisjsConfig = defineConfig([
+export const adonisjsConfig: tseslint.ConfigWithExtends[] = [
   {
     files: [supportedFileTypes],
     plugins: {
-      '@adonisjs': adonisJsPlugin,
+      '@adonisjs': adonisJSPlugin,
     },
     rules: {
       '@adonisjs/prefer-lazy-controller-import': 'error',
@@ -29,7 +29,6 @@ export const adonisjsConfig = defineConfig([
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-floating-promises': 'off',
       'unicorn/no-anonymous-default-export': 'off',
-      'sonarjs/no-duplicate-string': 'off',
     },
   },
   {
@@ -85,4 +84,4 @@ export const adonisjsConfig = defineConfig([
       '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
   },
-]);
+];

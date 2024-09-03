@@ -1,17 +1,12 @@
-import pluginImport from 'eslint-plugin-import-x';
-import {
-  allFilesSupported,
-  allJsExtensions,
-  jsAndTsExtensions,
-  jsExtensions,
-  typescriptExtensions,
-} from '../constants.js';
-import { defineConfig } from '../define_config.js';
+import tseslint from 'typescript-eslint';
+import eslintPluginImportX from 'eslint-plugin-import-x';
+import { allFilesSupported, allJsExtensions } from '#src/constants';
 
-export const importConfig = defineConfig([
+export const importConfig: tseslint.ConfigWithExtends[] = [
+  eslintPluginImportX.flatConfigs.recommended,
+  eslintPluginImportX.flatConfigs.typescript,
   {
     files: [allFilesSupported],
-    plugins: { 'import-x': pluginImport },
     rules: {
       'import-x/consistent-type-specifier-style': ['error', 'prefer-inline'],
       'import-x/default': 'error',
@@ -69,19 +64,6 @@ export const importConfig = defineConfig([
       'import-x/unambiguous': 'off',
       'import-x/no-dynamic-require': 'off',
     },
-    settings: {
-      'import-x/extensions': jsAndTsExtensions,
-      'import-x/external-module-folders': ['node_modules', 'node_modules/@types'],
-      'import-x/parsers': {
-        'espree': jsExtensions,
-        '@typescript-eslint/parser': typescriptExtensions,
-      },
-      'import-x/resolver': {
-        node: {
-          extensions: jsAndTsExtensions,
-        },
-      },
-    },
   },
   {
     files: [`**/*.config.{${allJsExtensions}}`],
@@ -89,10 +71,4 @@ export const importConfig = defineConfig([
       'import-x/no-default-export': 'off',
     },
   },
-  {
-    files: [allFilesSupported],
-    linterOptions: {
-      reportUnusedDisableDirectives: true,
-    },
-  },
-]);
+];

@@ -1,8 +1,8 @@
+import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
-import { allJsExtensions } from '../constants.js';
-import { defineConfig } from '../define_config.js';
+import { allJsExtensions } from '#src/constants';
 
-export const vueConfig = defineConfig([
+export const vueConfig: tseslint.ConfigWithExtends[] = [
   ...pluginVue.configs['flat/recommended'],
   {
     files: ['**/*.vue'],
@@ -37,7 +37,6 @@ export const vueConfig = defineConfig([
       'vue/require-typed-ref': 'error',
       'vue/static-class-names-order': 'off',
       // Disable usage in vue files
-      'sonarjs/no-duplicate-string': 'off',
       'unicorn/filename-case': 'off',
     },
   },
@@ -63,4 +62,4 @@ export const vueConfig = defineConfig([
       '@typescript-eslint/naming-convention': 'off',
     },
   },
-]);
+];
