@@ -1,4 +1,4 @@
-import tseslint from 'typescript-eslint';
+import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
 import getGitignorePatterns from 'eslint-config-flat-gitignore';
 import { NodecfdiSettings } from '#src/types';
@@ -27,8 +27,8 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
     projectService: true,
   };
 
-  const defineConfig = (...configBlocksToMerge: tseslint.ConfigWithExtends[]) => {
-    const blocksToMerge: tseslint.ConfigWithExtends[] = [
+  const defineConfig = (...configBlocksToMerge: ConfigWithExtends[]) => {
+    const blocksToMerge: ConfigWithExtends[] = [
       eslintBaseConfig,
       ...typescriptConfig,
       ...unicornConfig,
