@@ -1,5 +1,11 @@
 # @nodecfdi/eslint-config
 
+[![Source Code][badge-source]][source]
+[![Discord][badge-discord]][discord]
+[![Latest Version][badge-release]][release]
+[![Software License][badge-license]][license]
+[![Total Downloads][badge-downloads]][downloads]
+
 > La libreria `@nodecfdi/eslint-config` exporta la configuración base para eslint usada en los proyectos de NodeCfdi.
 
 :us: The documentation of this project is in spanish as this is the natural language for intended audience.
@@ -26,32 +32,28 @@ yarn add -D eslint @nodecfdi/eslint-config
 pnpm add -D eslint @nodecfdi/eslint-config
 ```
 
-Opcional puedes instalar `eslint-define-config`
-
 ## Uso básico
 
 Para habilitar está configuración crea un archivo `eslint.config.js` en el root del proyecto y copia y pega el siguiente contenido:
 
 ```js
 // @ts-check
-import { nodecfdiConfig } from '@nodecfdi/eslint-config';
-import { defineFlatConfig } from 'eslint-define-config';
+import nodecfdiConfig from '@nodecfdi/eslint-config';
 
-export default defineFlatConfig([...nodecfdiConfig()]);
+const { defineConfig } = nodecfdiConfig(import.meta.dirname);
+
+export default defineConfig(); // Puedes agregar mas reglas o bloques de configuracion dentro de esta funcion
 ```
 
-Si deseas ajustar algúna regla o habilitar alguna no incluida, puedes extender de está configuración por ejemplo:
+Si deseas aplicar algun ajuste puedes y/o personalización puedes hacerlo de la siguiente manera:
 
 ```js
 // @ts-check
-import { nodecfdiConfig } from '@nodecfdi/eslint-config';
-import { defineFlatConfig } from 'eslint-define-config';
-// my other imports...
+import nodecfdiConfig from '@nodecfdi/eslint-config';
 
-export default defineFlatConfig([
-  ...nodecfdiConfig(),
-  // my other configurations
-]);
+const { defineConfig } = nodecfdiConfig(import.meta.dirname, { vitest: true, adonisjs: true });
+
+export default defineConfig(); // Puedes agregar mas reglas o bloques de configuracion dentro de esta funcion
 ```
 
 ## Ajustes y personalizaciones
@@ -71,22 +73,9 @@ type NodecfdiSettings = {
    */
   vue?: boolean;
   /**
-   * Experimental support to use tseslint projectService pass root dirname
+   * Typescript eslint project service option
    */
-  experimentalProjectService?: string;
-  /**
-   * This parameter allows you to override the paths for some Nodecfdi settings.
-   */
-  pathsOverrides?: {
-    /**
-     * With this setting, if you have multiple tsconfig.json files in your project (like tsconfig.json, tsconfig.eslint.json, tsconfig.node.json, etc...) you can specify which config NodeCfdi will pickup. You can also specify a list of paths, see: https://typescript-eslint.io/linting/typed-linting/monorepos/#one-tsconfigjson-per-package-and-an-optional-one-in-the-root.
-     */
-    tsconfigLocation?: string | string[];
-    /**
-     * This setting overrides the default Nodecfdi filepaths for test files. It accepts an array of filepaths, dictaced by minimatch syntax. Nodecfdi will apply Vitest rules only on these files.
-     */
-    tests?: string[];
-  };
+  projectService?: boolean | ProjectServiceOptions;
   /**
    * This setting apply some ignore patterns to the whole config.
    */
@@ -106,3 +95,37 @@ type NodecfdiSettings = {
   };
 };
 ```
+
+## Soporte
+
+Puedes obtener soporte abriendo un ticket en Github.
+
+Adicionalmente, esta librería pertenece a la comunidad [OcelotlStudio](https://ocelotlstudio.com), así que puedes usar los mismos canales de comunicación para obtener ayuda de algún miembro de la comunidad.
+
+## Compatibilidad
+
+Esta librería se mantendrá compatible con al menos la versión con
+[soporte activo de Node](https://nodejs.org/es/about/releases/) más reciente y [soporte activo de Typescript](https://www.typescriptlang.org/) más reciente.
+
+También utilizamos [Versionado Semántico 2.0.0](https://semver.org/lang/es/) por lo que puedes usar esta librería sin temor a romper tu aplicación.
+
+## Contribuciones
+
+Las contribuciones con bienvenidas. Por favor lee [CONTRIBUTING][] para más detalles y recuerda revisar el archivo [CHANGELOG][].
+
+## Copyright and License
+
+The `@nodecfdi/eslint-config` library is copyright © [NodeCfdi](https://github.com/nodecfdi) - [OcelotlStudio](https://ocelotlstudio.com) and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
+
+[contributing]: https://github.com/nodecfdi/.github/blob/main/docs/CONTRIBUTING.md
+[changelog]: https://github.com/nodecfdi/eslint-config/blob/main/CHANGELOG.md
+[source]: https://github.com/nodecfdi/eslint-config
+[discord]: https://discord.gg/AsqX8fkW2k
+[release]: https://www.npmjs.com/package/@nodecfdi/eslint-config
+[license]: https://github.com/nodecfdi/eslint-config/blob/main/LICENSE.md
+[downloads]: https://www.npmjs.com/package/@nodecfdi/eslint-config
+[badge-source]: https://img.shields.io/badge/source-nodecfdi/eslint--config-blue?logo=github
+[badge-discord]: https://img.shields.io/discord/459860554090283019?logo=discord
+[badge-release]: https://img.shields.io/npm/v/@nodecfdi/eslint-config?logo=npm
+[badge-license]: https://img.shields.io/github/license/nodecfdi/eslint-config?logo=open-source-initiative
+[badge-downloads]: https://img.shields.io/npm/dm/@nodecfdi/eslint-config?logo=npm
