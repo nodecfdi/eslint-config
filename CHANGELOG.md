@@ -1,4 +1,17 @@
-# @nodecfdi/eslint-config
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 2.0.0-0
+
+### Commits
+
+- chore: :truck: move package eslint-config for independent repository [`c5a26a4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c5a26a4f9e301406c124eb6cb274c1599c0c779a)
+- feat: :sparkles: add full support to eslint v9 [`5b89f30`](https://luffynando.github.com/nodecfdi/eslint-config/commit/5b89f30d889ead253c6c297f9d9dd21617a0fa9e)
+- docs: :memo: add missing readme update for latest release [`3b54c71`](https://luffynando.github.com/nodecfdi/eslint-config/commit/3b54c7157a8cc0b11dd5e0bb916565bc1bbb7eb7)
 
 <!-- auto-changelog-above -->
 ## 1.10.4
