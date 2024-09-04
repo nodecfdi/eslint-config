@@ -5,13 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.0-1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-0...v2.0.0-1)
+## [v2.0.0-2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-1...v2.0.0-2)
+
+### Commits
+
+- fix: :bug: resolve problem with handle default project files and projectService [`0a49817`](https://luffynando.github.com/nodecfdi/eslint-config/commit/0a49817df17970a97b55069d7059f69ee6215a29)
+
+## [v2.0.0-1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-0...v2.0.0-1) - 2024-09-03
 
 ### Commits
 
 - fix: :bug: resolve problem with rules and optional option for nodecfdi config [`b5d202b`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b5d202bf00a4baa88dad26bbb6b7157e7157ab02)
 - fix: :bug: resolve allow types consistent. typescript definition types [`92ea2fb`](https://luffynando.github.com/nodecfdi/eslint-config/commit/92ea2fbe6949e03fb03667d90ff39ef485526d2c)
-- chore: :arrow_up: update dependencies for usage not resolved peer [`fc6dcd7`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fc6dcd764d05e974f85232c7f83a2175b9e32eb4)
+- chore(release): :tada: 2.0.0-1 [`f092f28`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f092f28987b160104c74d5aec249356b3da0eb4b)
 
 ## v2.0.0-0 - 2024-09-03
 
