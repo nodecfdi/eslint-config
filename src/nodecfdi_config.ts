@@ -29,8 +29,8 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
 
   const defineConfig = (...configBlocksToMerge: ConfigWithExtends[]) => {
     const blocksToMerge: ConfigWithExtends[] = [
-      eslintBaseConfig,
       ...typescriptConfig,
+      eslintBaseConfig,
       ...unicornConfig,
       simpleImportSortConfig,
       ...regexpConfig,
