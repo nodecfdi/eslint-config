@@ -5,12 +5,6 @@ export const eslintBaseConfig: ConfigWithExtends = {
   files: [allFilesSupported],
   rules: {
     'array-callback-return': ['error', { allowImplicit: true, checkForEach: true }],
-    // we are using the @typescript/eslint version
-    'arrow-body-style': 'off',
-    // we are using the @typescript/eslint version
-    'default-param-last': 'off',
-    // we are using the @typescript/eslint version
-    'dot-notation': 'off',
     'eqeqeq': 'error',
     'func-style': 'error',
     'logical-assignment-operators': ['error', 'never'],
@@ -19,8 +13,6 @@ export const eslintBaseConfig: ConfigWithExtends = {
     'no-console': ['error', { allow: ['warn', 'error', 'debug', 'info', 'table'] }],
     'no-constant-binary-expression': 'error',
     'no-else-return': ['error', { allowElseIf: false }],
-    // we are using the @typescript/eslint version
-    'no-empty-function': 'off',
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
@@ -30,8 +22,6 @@ export const eslintBaseConfig: ConfigWithExtends = {
     'no-multi-assign': 'error',
     'no-multi-str': 'error',
     'no-negated-condition': 'error',
-    // we are using the unicorn version
-    'no-nested-ternary': 'off',
     'no-new-object': 'error',
     'no-new-wrappers': 'error',
     'no-octal-escape': 'error',
@@ -75,17 +65,10 @@ export const eslintBaseConfig: ConfigWithExtends = {
       },
     ],
     'no-return-assign': ['error', 'always'],
-    'no-return-await': 'off',
     'no-sequences': ['error', { allowInParentheses: false }],
-    // we are using the @typescript/eslint version
-    'no-shadow': 'off',
     'no-unmodified-loop-condition': 'error',
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
     'no-unreachable-loop': 'error',
-    // we are using the @typescript/eslint version
-    'no-unused-expressions': 'off',
-    'no-unused-vars': 'off',
-    'no-use-before-define': 'off',
     'no-useless-call': 'error',
     'no-void': ['error', { allowAsStatement: true }],
     'object-shorthand': 'error',
@@ -111,6 +94,5 @@ export const eslintBaseConfig: ConfigWithExtends = {
     'prefer-object-spread': 'error',
     'prefer-template': 'error',
     'require-atomic-updates': ['error', { allowProperties: true }],
-    'no-undef': 'off',
   },
 };
