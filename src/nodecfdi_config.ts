@@ -80,19 +80,29 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
 
     const vueSupport = userConfigChoices.vue ?? false;
 
-    return tseslint.config(...blocksToMerge, {
-      languageOptions: {
-        parser: vueSupport ? vueParser : tseslint.parser,
-        parserOptions: {
-          parser: vueSupport ? tseslint.parser : undefined,
-          ecmaVersion: 'latest',
-          sourceType: 'module',
-          extraFileExtensions: vueSupport ? ['.vue'] : undefined,
-          projectService: userConfigChoices.projectService ?? true,
-          tsconfigRootDir,
+    return tseslint.config(
+      ...blocksToMerge,
+      {
+        languageOptions: {
+          parser: vueSupport ? vueParser : tseslint.parser,
+          parserOptions: {
+            parser: vueSupport ? tseslint.parser : undefined,
+            ecmaVersion: 'latest',
+            sourceType: 'module',
+            extraFileExtensions: vueSupport ? ['.vue'] : undefined,
+            projectService: userConfigChoices.projectService ?? {
+              allowDefaultProject: ['*.js', '*.cjs'],
+              defaultProject: 'tsconfig.json',
+            },
+            tsconfigRootDir,
+          },
         },
       },
-    });
+      {
+        files: ['**/*.js', '**/*.cjs'],
+        ...tseslint.configs.disableTypeChecked,
+      },
+    );
   };
 
   return {

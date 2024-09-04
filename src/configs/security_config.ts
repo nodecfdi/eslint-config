@@ -8,6 +8,7 @@ export const securityConfig: ConfigWithExtends[] = [
     files: [allFilesSupported],
     rules: {
       'security/detect-object-injection': 'off',
+      'security/detect-non-literal-fs-filename': 'off',
     },
   },
 ];

@@ -152,8 +152,4 @@ export const typescriptConfig: ConfigWithExtends[] = [
       '@typescript-eslint/no-shadow': 'off',
     },
   },
-  {
-    files: ['**/*.js', '**/*.cjs'],
-    ...tseslint.configs.disableTypeChecked,
-  },
 ];
