@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.0-2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-1...v2.0.0-2)
+## [v2.0.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-2...v2.0.0)
+
+### Commits
+
+- refactor: :fire: move rules overrides off to overrides config and added after all configs rules [`c021c18`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c021c181fefd54711f4f6c8a6d1e8a68dc993791)
+- fix: :bug: resolve order for override default recommended eslint config apply [`256e8bf`](https://luffynando.github.com/nodecfdi/eslint-config/commit/256e8bfc154a8804214f8c968b8757f7d99a5585)
+
+## [v2.0.0-2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-1...v2.0.0-2) - 2024-09-03
 
 ### Commits
 
 - fix: :bug: resolve problem with handle default project files and projectService [`0a49817`](https://luffynando.github.com/nodecfdi/eslint-config/commit/0a49817df17970a97b55069d7059f69ee6215a29)
+- chore(release): :tada: 2.0.0-2 [`4a213a8`](https://luffynando.github.com/nodecfdi/eslint-config/commit/4a213a86410fc843c57ec70384a92daa4ba4c2a9)
 
 ## [v2.0.0-1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-0...v2.0.0-1) - 2024-09-03
 
