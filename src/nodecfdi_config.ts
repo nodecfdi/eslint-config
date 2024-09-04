@@ -78,22 +78,21 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
       ...configBlocksToMerge,
     );
 
-    return tseslint.config(
-      {
-        languageOptions: {
-          parser: userConfigChoices.vue ? vueParser : tseslint.parser,
-          parserOptions: {
-            parser: userConfigChoices.vue ? tseslint.parser : undefined,
-            projectService: userConfigChoices.projectService,
-            tsconfigRootDir,
-            ecmaVersion: 'latest',
-            sourceType: 'module',
-            extraFileExtensions: userConfigChoices.vue ? ['.vue'] : undefined,
-          },
+    const vueSupport = userConfigChoices.vue ?? false;
+
+    return tseslint.config(...blocksToMerge, {
+      languageOptions: {
+        parser: vueSupport ? vueParser : tseslint.parser,
+        parserOptions: {
+          parser: vueSupport ? tseslint.parser : undefined,
+          ecmaVersion: 'latest',
+          sourceType: 'module',
+          extraFileExtensions: vueSupport ? ['.vue'] : undefined,
+          projectService: userConfigChoices.projectService ?? true,
+          tsconfigRootDir,
         },
       },
-      ...blocksToMerge,
-    );
+    });
   };
 
   return {

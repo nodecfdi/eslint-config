@@ -16,7 +16,7 @@ export type NodecfdiSettings = {
   /**
    * Typescript eslint project service option
    */
-  projectService: TSESLint.FlatConfig.ParserOptions['projectService'];
+  projectService?: TSESLint.FlatConfig.ParserOptions['projectService'];
   /**
    * This setting apply some ignore patterns to the whole config.
    */

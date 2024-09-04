@@ -28,6 +28,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/no-unsafe-return': 'off',
       'unicorn/no-anonymous-default-export': 'off',
     },
   },

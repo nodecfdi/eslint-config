@@ -38,4 +38,5 @@ export const ignores = [
   '__snapshots__',
   '!.github',
   '!.vscode',
+  `**/ecosystem.config.{${allJsExtensions}}`,
 ];
