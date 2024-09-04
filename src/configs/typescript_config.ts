@@ -1,16 +1,11 @@
 import eslint from '@eslint/js';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported, supportedFileTypeJs } from '#src/constants';
+import { allFilesSupported } from '#src/constants';
 
 export const typescriptConfig: ConfigWithExtends[] = [
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
-  {},
-  {
-    files: [...supportedFileTypeJs],
-    ...tseslint.configs.disableTypeChecked,
-  },
   {
     files: [allFilesSupported],
     rules: {
@@ -148,5 +143,17 @@ export const typescriptConfig: ConfigWithExtends[] = [
         },
       ],
     },
+  },
+  {
+    files: ['**/types.ts', '**/types/**/*.ts', '**/*.d.ts'],
+    rules: {
+      '@typescript-eslint/consistent-type-definitions': 'off',
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-shadow': 'off',
+    },
+  },
+  {
+    files: ['**/*.js', '**/*.cjs'],
+    ...tseslint.configs.disableTypeChecked,
   },
 ];
