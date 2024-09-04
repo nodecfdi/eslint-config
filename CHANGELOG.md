@@ -5,7 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 2.0.0-0
+## [v2.0.0-1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-0...v2.0.0-1)
+
+### Commits
+
+- fix: :bug: resolve problem with rules and optional option for nodecfdi config [`b5d202b`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b5d202bf00a4baa88dad26bbb6b7157e7157ab02)
+- fix: :bug: resolve allow types consistent. typescript definition types [`92ea2fb`](https://luffynando.github.com/nodecfdi/eslint-config/commit/92ea2fbe6949e03fb03667d90ff39ef485526d2c)
+- chore: :arrow_up: update dependencies for usage not resolved peer [`fc6dcd7`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fc6dcd764d05e974f85232c7f83a2175b9e32eb4)
+
+## v2.0.0-0 - 2024-09-03
 
 ### Commits
 
