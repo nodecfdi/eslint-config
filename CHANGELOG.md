@@ -5,11 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-2...v2.0.0)
+## [v2.0.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0...v2.0.1)
+
+### Commits
+
+- fix: :bug: resolve problem with missing typescript resolver in plugin eslint-import-x [`250b55c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/250b55c5efd00feaaf9a3c81113929bba85252dd)
+
+## [v2.0.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-2...v2.0.0) - 2024-09-03
 
 ### Commits
 
 - refactor: :fire: move rules overrides off to overrides config and added after all configs rules [`c021c18`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c021c181fefd54711f4f6c8a6d1e8a68dc993791)
+- chore(release): :tada: 2.0.0 [`df28296`](https://luffynando.github.com/nodecfdi/eslint-config/commit/df282964ecabf3fb74ee2a3fe71ebe55806cf4af)
 - fix: :bug: resolve order for override default recommended eslint config apply [`256e8bf`](https://luffynando.github.com/nodecfdi/eslint-config/commit/256e8bfc154a8804214f8c968b8757f7d99a5585)
 
 ## [v2.0.0-2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-1...v2.0.0-2) - 2024-09-03
