@@ -111,6 +111,6 @@ export const eslintBaseConfig: ConfigWithExtends = {
     'prefer-object-spread': 'error',
     'prefer-template': 'error',
     'require-atomic-updates': ['error', { allowProperties: true }],
-    'strict': ['error', 'never'], // we are using the eslint-plugin-arrow-return-style version
+    'no-undef': 'off',
   },
 };
