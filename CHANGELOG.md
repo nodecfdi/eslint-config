@@ -5,10 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0...v2.0.1)
+## [v2.0.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.1...v2.0.2)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies and apply recent files to dependencies libs [`a508944`](https://luffynando.github.com/nodecfdi/eslint-config/commit/a50894441654af701c55785f2aaf53992766b797)
+
+## [v2.0.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0...v2.0.1) - 2024-09-04
+
+### Commits
+
+- chore(release): :tada: 2.0.1 [`fb72c24`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fb72c24cb7f444ef489f6db12cee9346e3bdc7e0)
 - fix: :bug: resolve problem with missing typescript resolver in plugin eslint-import-x [`250b55c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/250b55c5efd00feaaf9a3c81113929bba85252dd)
 
 ## [v2.0.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0-2...v2.0.0) - 2024-09-03
