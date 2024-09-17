@@ -11,6 +11,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
     rules: {
       '@adonisjs/prefer-lazy-controller-import': 'error',
       '@adonisjs/prefer-lazy-listener-import': 'error',
+      'import-x/no-cycle': 'off',
     },
   },
   {
