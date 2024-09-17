@@ -37,15 +37,15 @@
     "version": "pnpm run build && pnpm run changelog"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.1",
-    "@commitlint/config-conventional": "^19.4.1",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@nodecfdi/prettier-config": "^1.2.0",
     "@nodecfdi/tsconfig": "^1.7.2",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/eslint__js": "^8.42.3",
-    "auto-changelog": "^2.4.0",
+    "auto-changelog": "^2.5.0",
     "eslint": "^9.9.1",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "is-in-ci": "^1.0.0",
     "np": "^10.0.7",
     "prettier": "^3.3.3",
@@ -57,7 +57,7 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
     "@eslint/js": "^9.10.0",
     "@stylistic/eslint-plugin": "^2.8.0",
-    "@vitest/eslint-plugin": "^1.1.0",
+    "@vitest/eslint-plugin": "^1.1.4",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
@@ -68,7 +68,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^55.0.0",
     "eslint-plugin-vue": "^9.28.0",
-    "typescript-eslint": "^8.5.0",
+    "typescript-eslint": "^8.6.0",
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
