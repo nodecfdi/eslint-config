@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.1...v2.0.2)
+## [v2.0.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.2...v2.0.3)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies [`93224de`](https://luffynando.github.com/nodecfdi/eslint-config/commit/93224de6aea0639366ece03b996a2cb3583f9b08)
+- fix: :bug: resolve problem with relationships in lucid adonis [`c7d1f61`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c7d1f61b9f90330b97a523a0bd917c0b5f984605)
+
+## [v2.0.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.1...v2.0.2) - 2024-09-09
+
+### Commits
+
+- chore(release): :tada: 2.0.2 [`cb5d31e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/cb5d31e299c51ce10e340865560f0d352d75d6c7)
 - chore: :arrow_up: update dependencies and apply recent files to dependencies libs [`a508944`](https://luffynando.github.com/nodecfdi/eslint-config/commit/a50894441654af701c55785f2aaf53992766b797)
 
 ## [v2.0.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.0...v2.0.1) - 2024-09-04
