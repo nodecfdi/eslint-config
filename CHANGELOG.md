@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.2...v2.0.3)
+## [v2.0.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.3...v2.0.4)
 
 ### Commits
 
+- chore: :arrow_up: upgrade dependencies [`7a22fd1`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7a22fd17ba9913dbb2039439b2aa40a767057b83)
+- fix: :bug: apply resolution of override rule for adonis controllers [`305fdbe`](https://luffynando.github.com/nodecfdi/eslint-config/commit/305fdbe378f626060fead8d88df2ec973607962f)
+
+## [v2.0.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.2...v2.0.3) - 2024-09-17
+
+### Commits
+
+- chore(release): :tada: 2.0.3 [`0d95dce`](https://luffynando.github.com/nodecfdi/eslint-config/commit/0d95dce3d076f33cd44d2e449ff8a07c1c3ecd08)
 - chore: :arrow_up: update dependencies [`93224de`](https://luffynando.github.com/nodecfdi/eslint-config/commit/93224de6aea0639366ece03b996a2cb3583f9b08)
 - fix: :bug: resolve problem with relationships in lucid adonis [`c7d1f61`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c7d1f61b9f90330b97a523a0bd917c0b5f984605)
 
