@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.3...v2.0.4)
+## [v2.0.5](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.4...v2.0.5)
 
 ### Commits
 
+- chore: :construction: update rules and config for import and default typescript service [`be18898`](https://luffynando.github.com/nodecfdi/eslint-config/commit/be18898caceccf665171a81cfa465363ff630f14)
+- chore: :arrow_up: update dependencies [`2da6d37`](https://luffynando.github.com/nodecfdi/eslint-config/commit/2da6d37ad7c82b5bcae9b66bf6c280bcde296fd9)
+
+## [v2.0.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.3...v2.0.4) - 2024-09-25
+
+### Commits
+
+- chore(release): :tada: 2.0.4 [`5b4f778`](https://luffynando.github.com/nodecfdi/eslint-config/commit/5b4f778ffca69278cc01dba8f990ad80d6033f9f)
 - chore: :arrow_up: upgrade dependencies [`7a22fd1`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7a22fd17ba9913dbb2039439b2aa40a767057b83)
 - fix: :bug: apply resolution of override rule for adonis controllers [`305fdbe`](https://luffynando.github.com/nodecfdi/eslint-config/commit/305fdbe378f626060fead8d88df2ec973607962f)
 
