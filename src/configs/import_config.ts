@@ -9,18 +9,12 @@ export const importConfig: ConfigWithExtends[] = [
     files: [allFilesSupported],
     rules: {
       'import-x/consistent-type-specifier-style': ['error', 'prefer-inline'],
-      'import-x/default': 'error',
       'import-x/dynamic-import-chunkname': 'off',
       'import-x/export': 'error',
       'import-x/exports-last': 'off',
-      // Disable for issue with imports in packages
-      'import-x/extensions': 'off',
       'import-x/first': 'error',
       'import-x/group-exports': 'off',
       'import-x/max-dependencies': 'off',
-      // TypeScript compilation already ensures that named imports exist in the referenced module
-      'import-x/named': 'off',
-      'import-x/namespace': 'off',
       'import-x/newline-after-import': 'error',
       'import-x/no-absolute-path': 'error',
       'import-x/no-amd': 'error',
@@ -50,7 +44,6 @@ export const importConfig: ConfigWithExtends[] = [
         'error',
         { allow: ['**/*.{css,sass,scss}', 'reflect-metadata'] },
       ],
-      'import-x/no-unresolved': 'off',
       'import-x/no-unused-modules': 'off',
       'import-x/no-useless-path-segments': [
         'error',
@@ -63,6 +56,14 @@ export const importConfig: ConfigWithExtends[] = [
       'import-x/prefer-default-export': 'off',
       'import-x/unambiguous': 'off',
       'import-x/no-dynamic-require': 'off',
+
+      // TypeScript provides the same checks as part of standard type checking
+      'import-x/named': 'off',
+      'import-x/namespace': 'off',
+      'import-x/default': 'off',
+      'import-x/no-named-as-default-member': 'off',
+      'import-x/no-unresolved': 'off',
+      'import-x/extensions': 'off',
     },
   },
   {

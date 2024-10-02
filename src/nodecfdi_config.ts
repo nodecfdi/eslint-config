@@ -92,7 +92,6 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
             extraFileExtensions: vueSupport ? ['.vue'] : undefined,
             projectService: userConfigChoices.projectService ?? {
               allowDefaultProject: ['*.js', '*.cjs'],
-              defaultProject: 'tsconfig.json',
             },
             tsconfigRootDir,
           },
