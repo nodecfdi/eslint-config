@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.5](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.4...v2.0.5)
+## [v2.0.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.5...v2.0.6)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`fe72c7d`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fe72c7d53076ef90cec045309f53f3182cf9bc3a)
+- perf: :construction_worker: disable rule for import-x, is same  like a typescript rules, duplicity [`3affa2c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/3affa2c7d693d00e46f31a046bdcc8a8e2c94d95)
+
+## [v2.0.5](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.4...v2.0.5) - 2024-10-01
 
 ### Commits
 
 - chore: :construction: update rules and config for import and default typescript service [`be18898`](https://luffynando.github.com/nodecfdi/eslint-config/commit/be18898caceccf665171a81cfa465363ff630f14)
+- chore(release): :tada: 2.0.5 [`d5313d9`](https://luffynando.github.com/nodecfdi/eslint-config/commit/d5313d94154da5e89a7ce39082e4ec40e94e63b7)
 - chore: :arrow_up: update dependencies [`2da6d37`](https://luffynando.github.com/nodecfdi/eslint-config/commit/2da6d37ad7c82b5bcae9b66bf6c280bcde296fd9)
 
 ## [v2.0.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.3...v2.0.4) - 2024-09-25
