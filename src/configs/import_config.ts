@@ -22,7 +22,6 @@ export const importConfig: ConfigWithExtends[] = [
       'import-x/no-commonjs': 'off',
       'import-x/no-cycle': 'error',
       'import-x/no-default-export': 'off',
-      'import-x/no-deprecated': 'warn',
       'import-x/no-duplicates': ['error', { 'prefer-inline': true }],
       'import-x/no-extraneous-dependencies': [
         'error',
@@ -64,6 +63,7 @@ export const importConfig: ConfigWithExtends[] = [
       'import-x/no-named-as-default-member': 'off',
       'import-x/no-unresolved': 'off',
       'import-x/extensions': 'off',
+      'import-x/no-deprecated': 'off',
     },
   },
   {
