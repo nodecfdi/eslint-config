@@ -51,7 +51,11 @@ Si deseas aplicar algun ajuste puedes y/o personalización puedes hacerlo de la 
 // @ts-check
 import nodecfdiConfig from '@nodecfdi/eslint-config';
 
-const { defineConfig } = nodecfdiConfig(import.meta.dirname, { vitest: true, adonisjs: true });
+const { defineConfig } = nodecfdiConfig(import.meta.dirname, {
+  vitest: true,
+  adonisjs: true,
+  sonarjs: true,
+});
 
 export default defineConfig(); // Puedes agregar mas reglas o bloques de configuracion dentro de esta funcion
 ```
@@ -72,6 +76,10 @@ type NodecfdiSettings = {
    * Vue3 Support.
    */
   vue?: boolean;
+  /**
+   * SonarJS support
+   */
+  sonarjs?: boolean;
   /**
    * Typescript eslint project service option
    */
