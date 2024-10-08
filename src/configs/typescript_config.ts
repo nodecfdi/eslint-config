@@ -1,13 +1,13 @@
 import eslint from '@eslint/js';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupportedByTs } from '#src/constants';
 
 export const typescriptConfig: ConfigWithExtends[] = [
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   {
-    files: [allFilesSupported],
+    files: [allFilesSupportedByTs],
     rules: {
       '@typescript-eslint/array-type': 'error',
       '@typescript-eslint/ban-ts-comment': [
