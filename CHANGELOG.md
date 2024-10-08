@@ -5,10 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.0.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.5...v2.0.6)
+## [v2.1.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.6...v2.1.0)
 
 ### Commits
 
+- feat: :sparkles: add support to sonarjs rules with module activate option, not default applied [`b2e7e65`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b2e7e656aec0f0e432411aa66ed4185afa4ba2a1)
+- style: :rotating_light: apply lint issues fix and small refactoring [`b44ca74`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b44ca7488daaf18fe47d128147409381769af115)
+- docs: :memo: update readme with latest support to sonarjs [`403273e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/403273e4d42b216e92326937c93daf7d311b9c09)
+
+## [v2.0.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.5...v2.0.6) - 2024-10-03
+
+### Commits
+
+- chore(release): :tada: 2.0.6 [`55f9aaa`](https://luffynando.github.com/nodecfdi/eslint-config/commit/55f9aaa9dc0d3445415a3ad5e3307a2eaf3e98d2)
 - chore: :arrow_up: update dependencies [`fe72c7d`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fe72c7d53076ef90cec045309f53f3182cf9bc3a)
 - perf: :construction_worker: disable rule for import-x, is same  like a typescript rules, duplicity [`3affa2c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/3affa2c7d693d00e46f31a046bdcc8a8e2c94d95)
 
