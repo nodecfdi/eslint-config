@@ -19,8 +19,7 @@
         "types": "./dist/esm/types.d.ts",
         "default": "./dist/esm/types.js"
       }
-    },
-    "./package.json": "./package.json"
+    }
   },
   "imports": {
     "#src/*": "./src/*.js"
@@ -128,8 +127,7 @@
     ],
     "exports": {
       ".": "./src/nodecfdi_config.ts",
-      "./types": "./src/types.ts",
-      "./package.json": "./package.json"
+      "./types": "./src/types.ts"
     }
   }
 }
