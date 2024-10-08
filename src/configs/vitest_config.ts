@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import vitest from '@vitest/eslint-plugin';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allJsExtensions } from '#src/constants';
 
 export const vitestConfig: ConfigWithExtends = {

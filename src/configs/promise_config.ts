@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import pluginPromise from 'eslint-plugin-promise';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const promiseConfig: ConfigWithExtends[] = [

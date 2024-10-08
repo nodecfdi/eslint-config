@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const simpleImportSortConfig: ConfigWithExtends = {

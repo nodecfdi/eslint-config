@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const stylisticConfig: ConfigWithExtends = {

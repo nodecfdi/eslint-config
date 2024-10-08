@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import eslintPluginImportX from 'eslint-plugin-import-x';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported, allJsExtensions } from '#src/constants';
 
 export const importConfig: ConfigWithExtends[] = [

@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import pluginSecurity from 'eslint-plugin-security';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const securityConfig: ConfigWithExtends[] = [

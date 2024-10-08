@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const commentsConfig: ConfigWithExtends[] = [

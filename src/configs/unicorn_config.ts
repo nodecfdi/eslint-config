@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const unicornConfig: ConfigWithExtends[] = [

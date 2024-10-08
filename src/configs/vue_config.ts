@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { allJsExtensions } from '#src/constants';
 
 export const vueConfig: ConfigWithExtends[] = [

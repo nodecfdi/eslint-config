@@ -1,5 +1,5 @@
-import { type ConfigWithExtends } from 'typescript-eslint';
 import adonisJSPlugin from '@adonisjs/eslint-plugin';
+import { type ConfigWithExtends } from 'typescript-eslint';
 import { supportedFileTypes } from '#src/constants';
 
 export const adonisjsConfig: ConfigWithExtends[] = [
