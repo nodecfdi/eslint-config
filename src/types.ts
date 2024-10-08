@@ -14,6 +14,10 @@ export type NodecfdiSettings = {
    */
   vue?: boolean;
   /**
+   * SonarJS support
+   */
+  sonarjs?: boolean;
+  /**
    * Typescript eslint project service option
    */
   projectService?: TSESLint.FlatConfig.ParserOptions['projectService'];

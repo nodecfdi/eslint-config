@@ -1,23 +1,24 @@
+import getGitignorePatterns from 'eslint-config-flat-gitignore';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
-import getGitignorePatterns from 'eslint-config-flat-gitignore';
-import { NodecfdiSettings } from '#src/types';
+import { adonisjsConfig } from '#src/configs/adonisjs_config';
+import { commentsConfig } from '#src/configs/comments_config';
 import { eslintBaseConfig } from '#src/configs/eslint_base_config';
+import { importConfig } from '#src/configs/import_config';
+import { overridesConfig } from '#src/configs/overrides_config';
+import { prettierConfig } from '#src/configs/prettier_config';
+import { promiseConfig } from '#src/configs/promise_config';
+import { regexpConfig } from '#src/configs/regexp_config';
+import { securityConfig } from '#src/configs/security_config';
+import { simpleImportSortConfig } from '#src/configs/simple_import_sort_config';
+import { sonarjsConfig } from '#src/configs/sonarjs_config';
+import { stylisticConfig } from '#src/configs/stylistic_config';
 import { typescriptConfig } from '#src/configs/typescript_config';
 import { unicornConfig } from '#src/configs/unicorn_config';
-import { simpleImportSortConfig } from '#src/configs/simple_import_sort_config';
-import { regexpConfig } from '#src/configs/regexp_config';
-import { importConfig } from '#src/configs/import_config';
-import { commentsConfig } from '#src/configs/comments_config';
-import { promiseConfig } from '#src/configs/promise_config';
-import { securityConfig } from '#src/configs/security_config';
-import { stylisticConfig } from '#src/configs/stylistic_config';
 import { vitestConfig } from '#src/configs/vitest_config';
-import { adonisjsConfig } from '#src/configs/adonisjs_config';
 import { vueConfig } from '#src/configs/vue_config';
-import { prettierConfig } from '#src/configs/prettier_config';
-import { overridesConfig } from '#src/configs/overrides_config';
 import { ignores } from '#src/constants';
+import { type NodecfdiSettings } from '#src/types';
 
 const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSettings) => {
   const userConfigChoices = userConfigPrefers ?? {
@@ -25,6 +26,7 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
     adonisjs: false,
     vue: false,
     projectService: true,
+    sonarjs: false,
   };
 
   const defineConfig = (...configBlocksToMerge: ConfigWithExtends[]) => {
@@ -51,6 +53,10 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
 
     if (userConfigChoices.vue) {
       blocksToMerge.push(...vueConfig);
+    }
+
+    if (userConfigChoices.sonarjs) {
+      blocksToMerge.push(...sonarjsConfig);
     }
 
     blocksToMerge.push(...prettierConfig, ...overridesConfig);
@@ -81,7 +87,6 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
     const vueSupport = userConfigChoices.vue ?? false;
 
     return tseslint.config(
-      ...blocksToMerge,
       {
         languageOptions: {
           parser: vueSupport ? vueParser : tseslint.parser,
@@ -101,6 +106,7 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
         files: ['**/*.js', '**/*.cjs'],
         ...tseslint.configs.disableTypeChecked,
       },
+      ...blocksToMerge,
     );
   };
 
