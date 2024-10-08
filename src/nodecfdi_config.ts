@@ -99,6 +99,7 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
               allowDefaultProject: ['*.js', '*.cjs'],
             },
             tsconfigRootDir,
+            warnOnUnsupportedTypeScriptVersion: false, // Temporally ignore check in latest releases if all work good
           },
         },
       },
