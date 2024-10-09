@@ -12,8 +12,6 @@ export const supportedFileTypeJs = jsExtensions.map((extension) => `**/*${extens
 
 export const allFilesSupported = `**/*.{${allJsExtensions},d.ts,vue}`;
 
-export const allFilesSupportedByTs = `**/*.{${typescriptExtensions.map((item) => item.replace('.', '')).join(',')},d.ts,vue}`;
-
 export const ignores = [
   '**/node_modules/**',
   '**/dist/**',
