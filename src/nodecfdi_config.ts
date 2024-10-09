@@ -103,10 +103,6 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
           },
         },
       },
-      {
-        files: ['**/*.js', '**/*.cjs'],
-        ...tseslint.configs.disableTypeChecked,
-      },
       ...blocksToMerge,
     );
   };

@@ -1,4 +1,4 @@
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupported, supportedFileTypeJs } from '#src/constants';
 import eslint from '@eslint/js';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
 
@@ -151,5 +151,9 @@ export const typescriptConfig: ConfigWithExtends[] = [
       '@typescript-eslint/no-empty-interface': 'off',
       '@typescript-eslint/no-shadow': 'off',
     },
+  },
+  {
+    files: [supportedFileTypeJs],
+    ...tseslint.configs.disableTypeChecked,
   },
 ];
