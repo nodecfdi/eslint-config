@@ -5,13 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.6...v2.1.0)
+## [v2.1.1-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.0...v2.1.1-0)
+
+### Commits
+
+- perf: :zap: try setting override for remove warns on projects with sonarjs [`bb2d4ee`](https://luffynando.github.com/nodecfdi/eslint-config/commit/bb2d4ee4bf2b9fe3de9dc9b9a68292e9feea4789)
+- fix: :bug: resolve problem with handle resolutions for typescript config [`3de1f00`](https://luffynando.github.com/nodecfdi/eslint-config/commit/3de1f007832f68400143b0cdc6ac1722f5fa94e2)
+
+## [v2.1.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.6...v2.1.0) - 2024-10-08
 
 ### Commits
 
 - feat: :sparkles: add support to sonarjs rules with module activate option, not default applied [`b2e7e65`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b2e7e656aec0f0e432411aa66ed4185afa4ba2a1)
 - style: :rotating_light: apply lint issues fix and small refactoring [`b44ca74`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b44ca7488daaf18fe47d128147409381769af115)
-- docs: :memo: update readme with latest support to sonarjs [`403273e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/403273e4d42b216e92326937c93daf7d311b9c09)
+- chore(release): :tada: 2.1.0 [`45983bd`](https://luffynando.github.com/nodecfdi/eslint-config/commit/45983bd207916f131c782c68c559b6ea0cc65f60)
 
 ## [v2.0.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.0.5...v2.0.6) - 2024-10-03
 
