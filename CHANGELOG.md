@@ -5,10 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.0...v2.1.1-0)
+## [v2.1.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.1-0...v2.1.1)
 
 ### Commits
 
+- fix: :bug: fix disable typeChecked in js files only need in ts [`27cec5a`](https://luffynando.github.com/nodecfdi/eslint-config/commit/27cec5a9e65d2f3735b15fe7a941800887977748)
+
+## [v2.1.1-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.0...v2.1.1-0) - 2024-10-08
+
+### Commits
+
+- chore(release): :tada: 2.1.1-0 [`39831ef`](https://luffynando.github.com/nodecfdi/eslint-config/commit/39831efa50252b56c46c8a1f2c2de9a13958baaa)
 - perf: :zap: try setting override for remove warns on projects with sonarjs [`bb2d4ee`](https://luffynando.github.com/nodecfdi/eslint-config/commit/bb2d4ee4bf2b9fe3de9dc9b9a68292e9feea4789)
 - fix: :bug: resolve problem with handle resolutions for typescript config [`3de1f00`](https://luffynando.github.com/nodecfdi/eslint-config/commit/3de1f007832f68400143b0cdc6ac1722f5fa94e2)
 
