@@ -103,9 +103,11 @@
   },
   "prettier": "@nodecfdi/prettier-config",
   "packageManager": "pnpm@9.12.1",
-  "publishConfig": {
-    "access": "public",
-    "tag": "latest"
+  "overrides": {
+    "eslint-plugin-sonarjs": {
+      "eslint": "9",
+      "@typescript-eslint/parser": "8"
+    }
   },
   "pnpm": {
     "ignoredOptionalDependencies": [
@@ -117,6 +119,10 @@
         "@typescript-eslint/parser": "8"
       }
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
   },
   "auto-changelog": {
     "template": "keepachangelog",
