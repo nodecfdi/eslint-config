@@ -21,6 +21,9 @@ export const sonarjsConfig: ConfigWithExtends[] = [
       'sonarjs/no-base-to-string': 'off',
       'sonarjs/different-types-comparison': 'off',
       'sonarjs/no-vue-bypass-sanitization': 'off',
+      // Disable because xml namespaces need usage of http protocol
+      'sonarjs/no-clear-text-protocols': 'off',
+      'sonarjs/no-nested-functions': ['error', { threshold: 5 }],
     },
   },
 ];

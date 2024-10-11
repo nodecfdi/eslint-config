@@ -44,6 +44,7 @@ export const overridesConfig: ConfigWithExtends[] = [
       'no-unused-expressions': 'off',
       'no-unused-vars': 'off',
       'no-use-before-define': 'off',
+      '@typescript-eslint/no-redundant-type-constituents': 'off',
     },
   },
 ];
