@@ -5,10 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.1-0...v2.1.1)
+## [v2.1.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.1...v2.1.2)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies and try resolve problem with sonarjs peers [`2f8bf51`](https://luffynando.github.com/nodecfdi/eslint-config/commit/2f8bf519c6c38d8913846ea05d6f0854ef1f3be0)
+- chore: :arrow_up: update dependencies [`c54376c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c54376cc885aa3e7528b8e048f093467b2e18a4c)
+- style: :rotating_light: resolve duplicated rule and how to usage with sonarjs [`f84d82b`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f84d82b0db1dceb20ec1a1f87d4d89c262ada1dd)
+
+## [v2.1.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.1-0...v2.1.1) - 2024-10-09
+
+### Commits
+
+- chore(release): :tada: 2.1.1 [`5c6aaf9`](https://luffynando.github.com/nodecfdi/eslint-config/commit/5c6aaf9d9142b34bf81c5baab71640bc9ad9cfdb)
 - fix: :bug: fix disable typeChecked in js files only need in ts [`27cec5a`](https://luffynando.github.com/nodecfdi/eslint-config/commit/27cec5a9e65d2f3735b15fe7a941800887977748)
 
 ## [v2.1.1-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.0...v2.1.1-0) - 2024-10-08
