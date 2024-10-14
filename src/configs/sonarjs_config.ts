@@ -24,6 +24,8 @@ export const sonarjsConfig: ConfigWithExtends[] = [
       // Disable because xml namespaces need usage of http protocol
       'sonarjs/no-clear-text-protocols': 'off',
       'sonarjs/no-nested-functions': ['error', { threshold: 5 }],
+      // Disable typescript rule, its included by sonarjs
+      '@typescript-eslint/no-redundant-type-constituents': 'off',
     },
   },
 ];

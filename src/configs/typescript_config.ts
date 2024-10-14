@@ -1,6 +1,6 @@
-import { allFilesSupported, supportedFileTypeJs } from '#src/constants';
 import eslint from '@eslint/js';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
+import { allFilesSupported, supportedFileTypeJs } from '#src/constants';
 
 export const typescriptConfig: ConfigWithExtends[] = [
   eslint.configs.recommended,
