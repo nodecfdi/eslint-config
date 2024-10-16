@@ -9,6 +9,8 @@ export const typescriptConfig: ConfigWithExtends[] = [
   {
     files: [allFilesSupported],
     rules: {
+      '@typescript-eslint/no-base-to-string': 'off',
+      '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/array-type': 'error',
       '@typescript-eslint/ban-ts-comment': [
         'error',

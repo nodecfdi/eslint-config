@@ -16,13 +16,13 @@ export const adonisjsConfig: ConfigWithExtends[] = [
   },
   {
     files: [
-      '**/database/migrations/*.ts',
-      '**/database/factories/*.ts',
-      '**/database/seeders/*.ts',
+      '**/database/migrations/**/*.ts',
+      '**/database/factories/**/*.ts',
+      '**/database/seeders/**/*.ts',
       '**/bin/*.ts',
-      '**/commands/*.ts',
-      '**/app/middleware/*.ts',
-      '**/app/exceptions/*.ts',
+      '**/commands/**/*.ts',
+      '**/app/middleware/**/*.ts',
+      '**/app/exceptions/**/*.ts',
     ],
     rules: {
       '@typescript-eslint/require-await': 'off',
@@ -75,7 +75,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
     },
   },
   {
-    files: ['**/app/middleware/*.ts'],
+    files: ['**/app/middleware/**/*.ts'],
     rules: {
       '@typescript-eslint/no-unsafe-return': 'off',
     },

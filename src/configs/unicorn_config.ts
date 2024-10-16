@@ -7,6 +7,7 @@ export const unicornConfig: ConfigWithExtends[] = [
   {
     files: [allFilesSupported],
     rules: {
+      'unicorn/no-this-assignment': 'off',
       'unicorn/consistent-destructuring': 'error',
       'unicorn/consistent-function-scoping': ['error', { checkArrowFunctions: false }],
       'unicorn/filename-case': [
