@@ -20,7 +20,14 @@ import { vueConfig } from '#src/configs/vue_config';
 import { ignores } from '#src/constants';
 import { type NodecfdiSettings } from '#src/types';
 
-const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSettings) => {
+const configureConfig = (
+  tsconfigRootDir: string,
+  userConfigPrefers?: NodecfdiSettings,
+): {
+  defineConfig(
+    ...configBlocksToMerge: ConfigWithExtends[]
+  ): ReturnType<(typeof tseslint)['config']>;
+} => {
   const userConfigChoices = userConfigPrefers ?? {
     vitest: false,
     adonisjs: false,
@@ -99,7 +106,6 @@ const configureConfig = (tsconfigRootDir: string, userConfigPrefers?: NodecfdiSe
               allowDefaultProject: ['*.js', '*.cjs'],
             },
             tsconfigRootDir,
-            warnOnUnsupportedTypeScriptVersion: false, // Temporally ignore check in latest releases if all work good
           },
         },
       },
