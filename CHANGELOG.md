@@ -5,11 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.2...v2.1.3)
+## [v2.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.3...v2.2.0)
+
+### Commits
+
+- refactor: :recycle: add expected output for release version script [`fb45bef`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fb45befe7bc6a491a33d71d437e5562dfc8c6c88)
+- style: :lipstick: resolve rules for adonisjs and sonarjs problems [`5b33e47`](https://luffynando.github.com/nodecfdi/eslint-config/commit/5b33e47c50457ae85702f4a761fa4aa36df50072)
+- chore: :arrow_up: update dependencies [`957b26f`](https://luffynando.github.com/nodecfdi/eslint-config/commit/957b26fde87abc5afd2bfc900a3fa8fe9ac3f247)
+
+## [v2.1.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.2...v2.1.3) - 2024-10-16
 
 ### Commits
 
 - perf: :wrench: update configs for better handle with latest sonarjs and adonis [`26d0709`](https://luffynando.github.com/nodecfdi/eslint-config/commit/26d07097e632e736e7406300d30275e63356e4d2)
+- chore(release): :tada: 2.1.3 [`7069d38`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7069d386cac8487df5c2f9f45e3fb9d3875fe656)
 - chore: :construction: update pnpm package manager [`1a7a2c6`](https://luffynando.github.com/nodecfdi/eslint-config/commit/1a7a2c633cacbd07e24716d85c642d945ce57032)
 
 ## [v2.1.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.1...v2.1.2) - 2024-10-14
