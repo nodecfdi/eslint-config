@@ -1,12 +1,13 @@
+import { type TSESLint } from '@typescript-eslint/utils';
 import sonarjs from 'eslint-plugin-sonarjs';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { type TSESLint } from '@typescript-eslint/utils';
 import { allFilesSupported } from '#src/constants';
 
 const disableTypescriptEslintRulesOverlapped: TSESLint.FlatConfig.Rules = {
   '@typescript-eslint/no-redundant-type-constituents': 'off',
   '@typescript-eslint/default-param-last': 'off',
   '@typescript-eslint/no-base-to-string': 'off',
+  '@typescript-eslint/prefer-promise-reject-errors': 'off',
 };
 
 export const sonarjsConfig: ConfigWithExtends[] = [
