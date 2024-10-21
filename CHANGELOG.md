@@ -5,13 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.3...v2.2.0)
+## [v2.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.0...v2.2.1)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies and handle resolutions for peers [`98eb053`](https://luffynando.github.com/nodecfdi/eslint-config/commit/98eb053955dc417a58772cdea7ab3deb46a0f547)
+- fix: :construction: resolve how to handle eslint and adonisjs rules for paths [`017ff40`](https://luffynando.github.com/nodecfdi/eslint-config/commit/017ff40a2afc166664701ca4a1207e825affb69c)
+
+## [v2.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.3...v2.2.0) - 2024-10-17
+
+### Commits
+
+- chore(release): :tada: 2.2.0 [`f455147`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f4551476beab7d12c1f6ebdc50c5fc40c59f7a56)
 - refactor: :recycle: add expected output for release version script [`fb45bef`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fb45befe7bc6a491a33d71d437e5562dfc8c6c88)
 - style: :lipstick: resolve rules for adonisjs and sonarjs problems [`5b33e47`](https://luffynando.github.com/nodecfdi/eslint-config/commit/5b33e47c50457ae85702f4a761fa4aa36df50072)
-- chore: :arrow_up: update dependencies [`957b26f`](https://luffynando.github.com/nodecfdi/eslint-config/commit/957b26fde87abc5afd2bfc900a3fa8fe9ac3f247)
 
 ## [v2.1.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.2...v2.1.3) - 2024-10-16
 
