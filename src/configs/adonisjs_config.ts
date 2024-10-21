@@ -21,8 +21,8 @@ export const adonisjsConfig: ConfigWithExtends[] = [
       '**/database/seeders/**/*.ts',
       '**/bin/*.ts',
       '**/commands/**/*.ts',
-      '**/app/middleware/**/*.ts',
-      '**/app/exceptions/**/*.ts',
+      '**/middleware/**/*.ts',
+      '**/exceptions/**/*.ts',
     ],
     rules: {
       '@typescript-eslint/require-await': 'off',
@@ -34,7 +34,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
     },
   },
   {
-    files: ['**/config/*.ts', '**/src/extensions/**/*.ts'],
+    files: ['**/config/*.ts', '**/extensions/**/*.ts'],
     rules: {
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/no-empty-interface': 'off',
@@ -76,13 +76,13 @@ export const adonisjsConfig: ConfigWithExtends[] = [
     },
   },
   {
-    files: ['**/app/middleware/**/*.ts'],
+    files: ['**/middleware/**/*.ts'],
     rules: {
       '@typescript-eslint/no-unsafe-return': 'off',
     },
   },
   {
-    files: ['**/app/controllers/**/*.ts'],
+    files: ['**/controllers/**/*.ts'],
     rules: {
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
