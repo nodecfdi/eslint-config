@@ -5,11 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.0...v2.2.1)
+## [v2.2.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.1...v2.2.2)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`9fc9690`](https://luffynando.github.com/nodecfdi/eslint-config/commit/9fc969093636d705d04bf923868f0670f6a934f6)
+
+## [v2.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.0...v2.2.1) - 2024-10-21
 
 ### Commits
 
 - chore: :arrow_up: update dependencies and handle resolutions for peers [`98eb053`](https://luffynando.github.com/nodecfdi/eslint-config/commit/98eb053955dc417a58772cdea7ab3deb46a0f547)
+- chore(release): :tada: 2.2.1 [`deccdf4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/deccdf4da4a0470791f8f360f33ad09c4fea0cb7)
 - fix: :construction: resolve how to handle eslint and adonisjs rules for paths [`017ff40`](https://luffynando.github.com/nodecfdi/eslint-config/commit/017ff40a2afc166664701ca4a1207e825affb69c)
 
 ## [v2.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.1.3...v2.2.0) - 2024-10-17
