@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.2.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.1...v2.2.2)
+## [v2.2.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.2...v2.2.3)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`7fcc62f`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7fcc62f29bf4167cc678c61e3fa7d627d536479d)
+- perf: :construction: remove duplicate rule handle with sonarjs [`b0b2add`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b0b2adda4553f832991d00ceadb0b33e659e375c)
+
+## [v2.2.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.1...v2.2.2) - 2024-10-30
 
 ### Commits
 
 - chore: :arrow_up: update dependencies [`9fc9690`](https://luffynando.github.com/nodecfdi/eslint-config/commit/9fc969093636d705d04bf923868f0670f6a934f6)
+- chore(release): :tada: 2.2.2 [`57f6b25`](https://luffynando.github.com/nodecfdi/eslint-config/commit/57f6b25b4f16965f3ea5d929766ef79680e22b78)
 
 ## [v2.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.0...v2.2.1) - 2024-10-21
 
