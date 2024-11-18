@@ -1,15 +1,15 @@
-import stylistic from '@stylistic/eslint-plugin';
+import stylisticTs from '@stylistic/eslint-plugin-ts';
 import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '#src/constants';
 
 export const stylisticConfig: ConfigWithExtends = {
   files: [allFilesSupported],
   plugins: {
-    '@stylistic': stylistic,
+    '@stylistic/ts': stylisticTs,
   } as ConfigWithExtends['plugins'],
   rules: {
     // Prettier doesn't have strong opinions about emptyLines. See: https://prettier.io/docs/en/rationale.html#empty-lines.
-    '@stylistic/padding-line-between-statements': [
+    '@stylistic/ts/padding-line-between-statements': [
       'error',
       {
         blankLine: 'always',
@@ -19,10 +19,10 @@ export const stylisticConfig: ConfigWithExtends = {
       //require blank lines before all return statements, like the newline-before-return rule.
       { blankLine: 'always', next: 'return', prev: '*' },
     ],
-    '@stylistic/lines-between-class-members': ['error', 'always'],
-    '@stylistic/semi': ['error', 'always'],
-    '@stylistic/no-extra-semi': 'error',
-    '@stylistic/comma-spacing': 'error',
-    '@stylistic/quote-props': ['error', 'consistent'],
+    '@stylistic/ts/lines-between-class-members': ['error', 'always'],
+    '@stylistic/ts/semi': ['error', 'always'],
+    '@stylistic/ts/no-extra-semi': 'error',
+    '@stylistic/ts/comma-spacing': 'error',
+    '@stylistic/ts/quote-props': ['error', 'consistent'],
   },
 };
