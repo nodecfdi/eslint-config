@@ -55,6 +55,7 @@ const { defineConfig } = nodecfdiConfig(import.meta.dirname, {
   vitest: true,
   adonisjs: true,
   sonarjs: true,
+  n: true,
 });
 
 export default defineConfig(); // Puedes agregar mas reglas o bloques de configuracion dentro de esta funcion
@@ -75,11 +76,20 @@ type NodecfdiSettings = {
   /**
    * Vue3 Support.
    */
-  vue?: boolean;
+  vue?:
+    | boolean
+    | {
+        globalComponentsPatterns?: string[];
+        globalPropertiesPatterns?: string[];
+      };
   /**
    * SonarJS support
    */
   sonarjs?: boolean;
+  /**
+   * Node using n support
+   */
+  n?: boolean;
   /**
    * Typescript eslint project service option
    */
