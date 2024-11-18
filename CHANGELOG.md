@@ -5,10 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.2.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.2...v2.2.3)
+## [v2.3.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.3...v2.3.0)
 
 ### Commits
 
+- feat: :sparkles: add new node config for support node config using n plugin [`fd1f3b4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fd1f3b466e47a175f5345b42e4a3aa7cd6472248)
+- chore: :arrow_up: update dependencies [`3f38ad4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/3f38ad411a35192638521dcd7c383a892f3bed29)
+- feat: :sparkles: add vue extended config for not standard rules like a undef components [`a1e46b5`](https://luffynando.github.com/nodecfdi/eslint-config/commit/a1e46b5135e9b99f4cc0bbce7eb7cfb98e400b7d)
+
+## [v2.2.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.2...v2.2.3) - 2024-11-03
+
+### Commits
+
+- chore(release): :tada: 2.2.3 [`203e5f2`](https://luffynando.github.com/nodecfdi/eslint-config/commit/203e5f2f36cccf1d7eca6dbbd474fe49c473d621)
 - chore: :arrow_up: update dependencies [`7fcc62f`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7fcc62f29bf4167cc678c61e3fa7d627d536479d)
 - perf: :construction: remove duplicate rule handle with sonarjs [`b0b2add`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b0b2adda4553f832991d00ceadb0b33e659e375c)
 
