@@ -18,6 +18,10 @@ export type NodecfdiSettings = {
    */
   sonarjs?: boolean;
   /**
+   * Node using n support
+   */
+  n?: boolean;
+  /**
    * Typescript eslint project service option
    */
   projectService?: TSESLint.FlatConfig.ParserOptions['projectService'];

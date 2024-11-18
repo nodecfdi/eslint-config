@@ -5,6 +5,7 @@ import { adonisjsConfig } from '#src/configs/adonisjs_config';
 import { commentsConfig } from '#src/configs/comments_config';
 import { eslintBaseConfig } from '#src/configs/eslint_base_config';
 import { importConfig } from '#src/configs/import_config';
+import { nConfig } from '#src/configs/n_config';
 import { overridesConfig } from '#src/configs/overrides_config';
 import { prettierConfig } from '#src/configs/prettier_config';
 import { promiseConfig } from '#src/configs/promise_config';
@@ -34,6 +35,7 @@ const configureConfig = (
     vue: false,
     projectService: true,
     sonarjs: false,
+    n: false,
   };
 
   const defineConfig = (...configBlocksToMerge: ConfigWithExtends[]) => {
@@ -64,6 +66,10 @@ const configureConfig = (
 
     if (userConfigChoices.sonarjs) {
       blocksToMerge.push(...sonarjsConfig);
+    }
+
+    if (userConfigChoices.n) {
+      blocksToMerge.push(nConfig);
     }
 
     blocksToMerge.push(...prettierConfig, ...overridesConfig);
