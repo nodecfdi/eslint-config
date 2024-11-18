@@ -18,6 +18,7 @@ import { typescriptConfig } from '#src/configs/typescript_config';
 import { unicornConfig } from '#src/configs/unicorn_config';
 import { vitestConfig } from '#src/configs/vitest_config';
 import { vueConfig } from '#src/configs/vue_config';
+import { vueExtendedConfig } from '#src/configs/vue_extended_config';
 import { ignores } from '#src/constants';
 import { type NodecfdiSettings } from '#src/types';
 
@@ -62,6 +63,11 @@ const configureConfig = (
 
     if (userConfigChoices.vue) {
       blocksToMerge.push(...vueConfig);
+
+      const resolverGlobalComponents =
+        typeof userConfigChoices.vue === 'boolean' ? undefined : userConfigChoices.vue;
+
+      blocksToMerge.push(vueExtendedConfig(resolverGlobalComponents));
     }
 
     if (userConfigChoices.sonarjs) {

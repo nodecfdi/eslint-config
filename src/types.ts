@@ -12,7 +12,12 @@ export type NodecfdiSettings = {
   /**
    * Vue3 Support.
    */
-  vue?: boolean;
+  vue?:
+    | boolean
+    | {
+        globalComponentsPatterns?: string[];
+        globalPropertiesPatterns?: string[];
+      };
   /**
    * SonarJS support
    */
