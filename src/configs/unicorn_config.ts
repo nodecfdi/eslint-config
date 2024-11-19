@@ -35,7 +35,7 @@ export const unicornConfig: ConfigWithExtends[] = [
       'unicorn/prevent-abbreviations': 'off',
       // Disable because not work with others function like then
       'unicorn/no-thenable': 'off',
-      // Not expiring todo comments
+      // Not expiring to-do comments
       'unicorn/expiring-todo-comments': 'off',
     },
   },
