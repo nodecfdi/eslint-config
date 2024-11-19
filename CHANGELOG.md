@@ -5,13 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.0...v2.3.1)
+## [v2.3.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.1...v2.3.2)
+
+### Commits
+
+- fix: :bug: resolve problem with sonarjs and latest eslint version [`4daa7fb`](https://luffynando.github.com/nodecfdi/eslint-config/commit/4daa7fbf82c45d94804df63226960e1ecc6c0abe)
+
+## [v2.3.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.0...v2.3.1) - 2024-11-18
 
 ### Commits
 
 - chore: :arrow_up: update dependencies and resolved problems with typescript-eslint config [`ab84d25`](https://luffynando.github.com/nodecfdi/eslint-config/commit/ab84d25684df0d92615e7d9130fe45feac8044a8)
+- chore(release): :tada: 2.3.1 [`fc6deab`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fc6deabaf2931de8d5d67994170e8f34b538e7a3)
 - docs: :memo: update readme with latest changes [`6e9b406`](https://luffynando.github.com/nodecfdi/eslint-config/commit/6e9b406aafafdfa24fdcae14f2ef05b78fa7b48b)
-- style: :rotating_light: resolve problem reported by sonarjs [`d001a40`](https://luffynando.github.com/nodecfdi/eslint-config/commit/d001a400006be001a7218727a5a05e6716e92bd9)
 
 ## [v2.3.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.2.3...v2.3.0) - 2024-11-17
 

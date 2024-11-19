@@ -1,7 +1,7 @@
 {
   "name": "@nodecfdi/eslint-config",
   "description": "Configuración base de Eslint para proyectos NodeCfdi",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "type": "module",
   "module": "./dist/esm/nodecfdi_config.js",
   "files": [
