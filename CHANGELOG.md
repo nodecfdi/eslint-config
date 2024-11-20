@@ -5,10 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.2...v2.3.3)
+## [v2.3.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.3...v2.3.4)
 
 ### Commits
 
+- fix: :bug: resolve component name in template casing for Head and Link components [`1f55af6`](https://luffynando.github.com/nodecfdi/eslint-config/commit/1f55af6b37e2254242d014caa9807b08c11a04e6)
+
+## [v2.3.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.2...v2.3.3) - 2024-11-20
+
+### Commits
+
+- chore(release): :tada: 2.3.3 [`ca07ab4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/ca07ab4de153d01af15a76695af6b8c15c479902)
 - chore: :arrow_up: update dependencies [`f5594ba`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f5594bab9bb30d16f568132af2cdc113373694eb)
 - fix: :bug: resolve component name in template casing for packages not only registeredComponents [`60a9ad4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/60a9ad465eb4e807f31f750fae0f783440fbd05c)
 
