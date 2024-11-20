@@ -22,8 +22,8 @@ export const vueConfig: ConfigWithExtends[] = [
         'error',
         'kebab-case',
         {
-          registeredComponentsOnly: false,
-          ignores: [],
+          registeredComponentsOnly: true,
+          ignores: ['Head', 'Link'],
         },
       ],
       'vue/component-options-name-casing': ['error', 'kebab-case'],
