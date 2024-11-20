@@ -18,7 +18,14 @@ export const vueConfig: ConfigWithExtends[] = [
       'vue/block-order': 'error',
       'vue/block-tag-newline': 'error',
       'vue/component-api-style': ['error', ['script-setup']],
-      'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+      'vue/component-name-in-template-casing': [
+        'error',
+        'kebab-case',
+        {
+          registeredComponentsOnly: false,
+          ignores: [],
+        },
+      ],
       'vue/component-options-name-casing': ['error', 'kebab-case'],
       'vue/define-macros-order': 'error',
       'vue/define-props-declaration': ['error', 'runtime'],
