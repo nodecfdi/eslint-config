@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.1...v2.3.2)
+## [v2.3.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.2...v2.3.3)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies [`f5594ba`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f5594bab9bb30d16f568132af2cdc113373694eb)
+- fix: :bug: resolve component name in template casing for packages not only registeredComponents [`60a9ad4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/60a9ad465eb4e807f31f750fae0f783440fbd05c)
+
+## [v2.3.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.1...v2.3.2) - 2024-11-18
+
+### Commits
+
+- chore(release): :tada: 2.3.2 [`2e6aa5a`](https://luffynando.github.com/nodecfdi/eslint-config/commit/2e6aa5aba01ced282945bdfe1d69e90473c3878d)
 - fix: :bug: resolve problem with sonarjs and latest eslint version [`4daa7fb`](https://luffynando.github.com/nodecfdi/eslint-config/commit/4daa7fbf82c45d94804df63226960e1ecc6c0abe)
 
 ## [v2.3.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.0...v2.3.1) - 2024-11-18
