@@ -33,6 +33,7 @@ export const ignores = [
   '**/package.json',
   '**/*.min.*',
   '**/.pnpm-store/**',
+  '**/.adonisjs/**',
   'LICENSE*',
   'CHANGELOG.md',
   '__snapshots__',
