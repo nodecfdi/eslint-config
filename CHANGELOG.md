@@ -5,10 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.3...v2.3.4)
+## [v2.3.5](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.4...v2.3.5)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies [`131e053`](https://luffynando.github.com/nodecfdi/eslint-config/commit/131e053740de2c11fcf994a000391d1269a26809)
+- fix: :bug: resolve correct flat config type [`f86e473`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f86e4733b36277ee878de6cdc062d9064dbecf7d)
+- fix: :bug: ignore generated files of adonisjs [`7e234c8`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7e234c88296b3c134af9344c44bfffa6318652f8)
+
+## [v2.3.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.3...v2.3.4) - 2024-11-20
+
+### Commits
+
+- chore(release): :tada: 2.3.4 [`2656c71`](https://luffynando.github.com/nodecfdi/eslint-config/commit/2656c71465adcb1df8dff5b3a336c830aea5657b)
 - fix: :bug: resolve component name in template casing for Head and Link components [`1f55af6`](https://luffynando.github.com/nodecfdi/eslint-config/commit/1f55af6b37e2254242d014caa9807b08c11a04e6)
 
 ## [v2.3.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.2...v2.3.3) - 2024-11-20
