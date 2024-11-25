@@ -3,7 +3,7 @@ import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported, allJsExtensions } from '#src/constants';
 
 export const importConfig: ConfigWithExtends[] = [
-  eslintPluginImportX.flatConfigs.recommended,
+  eslintPluginImportX.flatConfigs.recommended as ConfigWithExtends,
   eslintPluginImportX.flatConfigs.typescript,
   {
     files: [allFilesSupported],
