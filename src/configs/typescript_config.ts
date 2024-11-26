@@ -72,7 +72,12 @@ export const typescriptConfig: ConfigWithExtends[] = [
       '@typescript-eslint/prefer-optional-chain': 'error',
       '@typescript-eslint/prefer-string-starts-ends-with': 'error',
       '@typescript-eslint/return-await': 'error',
-      '@typescript-eslint/switch-exhaustiveness-check': 'error',
+      '@typescript-eslint/switch-exhaustiveness-check': [
+        'error',
+        {
+          considerDefaultExhaustiveForUnions: true,
+        },
+      ],
       '@typescript-eslint/unified-signatures': 'error',
       '@typescript-eslint/no-unused-vars': [
         'error',

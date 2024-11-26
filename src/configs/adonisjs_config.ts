@@ -34,7 +34,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
     },
   },
   {
-    files: ['**/config/*.ts', '**/extensions/**/*.ts'],
+    files: ['**/config/*.ts', '**/extensions/**/*.ts', '**/providers/**/*.ts'],
     rules: {
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/no-empty-interface': 'off',

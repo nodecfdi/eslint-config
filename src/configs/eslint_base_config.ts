@@ -73,7 +73,7 @@ export const eslintBaseConfig: ConfigWithExtends = {
     'no-void': ['error', { allowAsStatement: true }],
     'object-shorthand': 'error',
     'operator-assignment': ['error', 'always'],
-    'prefer-arrow-callback': 'error',
+    'prefer-arrow-callback': 'off',
     'prefer-destructuring': [
       'error',
       {
