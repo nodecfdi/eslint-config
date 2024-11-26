@@ -5,13 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.5](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.4...v2.3.5)
+## [v2.3.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.5...v2.3.6)
 
 ### Commits
 
+- fix: :bug: resolve breaking and missing rules for adonisjs and unicorn [`c7cabef`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c7cabef77f5695b2154a455fd2a4005a6c7129a6)
+- chore: :arrow_up: update dependencies [`38061cc`](https://luffynando.github.com/nodecfdi/eslint-config/commit/38061cc58302a0bc5bf1ff89d3a05bc2a240c701)
+
+## [v2.3.5](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.4...v2.3.5) - 2024-11-25
+
+### Commits
+
+- chore(release): :tada: 2.3.5 [`7c3f12e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7c3f12e1f1a63552a0039369cd0c17e28af83bf2)
 - chore: :arrow_up: update dependencies [`131e053`](https://luffynando.github.com/nodecfdi/eslint-config/commit/131e053740de2c11fcf994a000391d1269a26809)
 - fix: :bug: resolve correct flat config type [`f86e473`](https://luffynando.github.com/nodecfdi/eslint-config/commit/f86e4733b36277ee878de6cdc062d9064dbecf7d)
-- fix: :bug: ignore generated files of adonisjs [`7e234c8`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7e234c88296b3c134af9344c44bfffa6318652f8)
 
 ## [v2.3.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.3...v2.3.4) - 2024-11-20
 
