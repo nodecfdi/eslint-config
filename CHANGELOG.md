@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.5...v2.3.6)
+## [v2.3.7](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.6...v2.3.7)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies [`84fcb10`](https://luffynando.github.com/nodecfdi/eslint-config/commit/84fcb102200f1603323ab6326e7be259bc192f5d)
+- fix: :bug: resolve problem with no param reasign its falsy valus [`43e90d5`](https://luffynando.github.com/nodecfdi/eslint-config/commit/43e90d5f59fbde62fd566c279c660ee38c1dbfe2)
+
+## [v2.3.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.5...v2.3.6) - 2024-11-26
+
+### Commits
+
+- chore(release): :tada: 2.3.6 [`685f5a3`](https://luffynando.github.com/nodecfdi/eslint-config/commit/685f5a305da19f64d7d68175a68de42766c76e03)
 - fix: :bug: resolve breaking and missing rules for adonisjs and unicorn [`c7cabef`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c7cabef77f5695b2154a455fd2a4005a6c7129a6)
 - chore: :arrow_up: update dependencies [`38061cc`](https://luffynando.github.com/nodecfdi/eslint-config/commit/38061cc58302a0bc5bf1ff89d3a05bc2a240c701)
 
