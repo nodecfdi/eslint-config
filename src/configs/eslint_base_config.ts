@@ -25,7 +25,7 @@ export const eslintBaseConfig: ConfigWithExtends = {
     'no-new-object': 'error',
     'no-new-wrappers': 'error',
     'no-octal-escape': 'error',
-    'no-param-reassign': ['error', { props: false }],
+    'no-param-reassign': 'off',
     'no-plusplus': 'error',
     'no-promise-executor-return': 'error',
     'no-proto': 'error',
