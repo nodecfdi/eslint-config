@@ -3,54 +3,54 @@
   "description": "Configuración base de Eslint para proyectos NodeCfdi",
   "version": "2.3.7",
   "type": "module",
-  "module": "./dist/esm/nodecfdi_config.js",
+  "module": "./build/nodecfdi_config.js",
+  "types": "./build/nodecfdi_config.d.ts",
   "files": [
-    "dist"
+    "build"
   ],
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/esm/nodecfdi_config.d.ts",
-        "default": "./dist/esm/nodecfdi_config.js"
+        "types": "./build/nodecfdi_config.d.ts",
+        "default": "./build/nodecfdi_config.js"
       }
     },
     "./types": {
       "import": {
-        "types": "./dist/esm/types.d.ts",
-        "default": "./dist/esm/types.js"
+        "types": "./build/types.d.ts",
+        "default": "./build/types.js"
       }
     }
-  },
-  "imports": {
-    "#src/*": "./src/*.js"
   },
   "scripts": {
     "prepare": "is-in-ci || husky",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "clean": "del-cli build",
     "changelog": "auto-changelog -p && git add CHANGELOG.md",
-    "prebuild": "pnpm format:check && pnpm typecheck",
-    "build": "tshy",
+    "prebuild": "pnpm run format:check && pnpm run typecheck",
+    "build": "pnpm run clean && tsup-node",
     "release": "np",
     "version": "pnpm run build && pnpm run changelog"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
-    "@nodecfdi/prettier-config": "^1.3.1",
-    "@nodecfdi/tsconfig": "^1.7.2",
+    "@nodecfdi/prettier-config": "^1.4.0",
+    "@nodecfdi/tsconfig": "^1.7.3",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/eslint-plugin-security": "^3.0.0",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.10.1",
     "auto-changelog": "^2.5.0",
+    "del-cli": "^6.0.0",
     "eslint": "^9.9.1",
     "husky": "^9.1.7",
     "is-in-ci": "^1.0.0",
     "np": "^10.1.0",
-    "prettier": "^3.4.1",
-    "tshy": "^3.0.2",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.5.4"
   },
   "dependencies": {
@@ -58,21 +58,21 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@eslint/js": "^9.16.0",
     "@stylistic/eslint-plugin-ts": "^2.11.0",
-    "@vitest/eslint-plugin": "^1.1.12",
+    "@vitest/eslint-plugin": "^1.1.14",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.3",
-    "eslint-plugin-import-x": "^4.4.3",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import-x": "^4.5.0",
     "eslint-plugin-n": "^17.14.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-sonarjs": "^2.0.4",
+    "eslint-plugin-sonarjs": "^3.0.1",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.12.0",
-    "typescript-eslint": "^8.16.0",
+    "globals": "^15.13.0",
+    "typescript-eslint": "^8.17.0",
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
@@ -99,24 +99,18 @@
   "engines": {
     "node": ">=20"
   },
+  "packageManager": "pnpm@9.15.0",
   "pnpm": {
     "overrides": {
       "eslint-import-resolver-typescript>eslint-plugin-import": "-"
-    },
-    "peerDependencyRules": {
-      "allowAny": [
-        "eslint",
-        "@typescript-eslint/parser"
-      ]
     }
   },
-  "packageManager": "pnpm@9.14.4",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
-  "prettier": "@nodecfdi/prettier-config",
+  "prettier": "@nodecfdi/prettier-config/pkg",
   "publishConfig": {
     "access": "public",
     "tag": "latest"
@@ -131,14 +125,15 @@
     "branch": "main",
     "yolo": true
   },
-  "tshy": {
-    "selfLink": false,
-    "dialects": [
-      "esm"
+  "tsup": {
+    "entry": [
+      "./src/nodecfdi_config.ts",
+      "./src/types.ts"
     ],
-    "exports": {
-      ".": "./src/nodecfdi_config.ts",
-      "./types": "./src/types.ts"
-    }
+    "outDir": "./build",
+    "clean": false,
+    "format": "esm",
+    "dts": true,
+    "target": "esnext"
   }
 }

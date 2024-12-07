@@ -1,3 +1,8 @@
 {
-  "extends": "@nodecfdi/tsconfig/tsconfig.package.json"
+  "extends": "@nodecfdi/tsconfig/tsconfig.package.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build"
+  },
+  "exclude": ["node_modules", "build", "coverage"]
 }
