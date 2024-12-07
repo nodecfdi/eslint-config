@@ -1,5 +1,5 @@
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported, allJsExtensions } from '#src/constants';
+import { allFilesSupported, allJsExtensions } from '../constants.js';
 
 export const overridesConfig: ConfigWithExtends[] = [
   {

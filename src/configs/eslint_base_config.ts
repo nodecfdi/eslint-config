@@ -1,5 +1,5 @@
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupported } from '../constants.js';
 
 export const eslintBaseConfig: ConfigWithExtends = {
   files: [allFilesSupported],

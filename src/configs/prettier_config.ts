@@ -1,6 +1,6 @@
 import eslintConfigPrettier from 'eslint-config-prettier';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupported } from '../constants.js';
 
 export const prettierConfig: ConfigWithExtends[] = [
   eslintConfigPrettier,

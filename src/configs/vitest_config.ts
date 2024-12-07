@@ -1,6 +1,6 @@
 import vitest from '@vitest/eslint-plugin';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allJsExtensions } from '#src/constants';
+import { allJsExtensions } from '../constants.js';
 
 export const vitestConfig: ConfigWithExtends = {
   files: [

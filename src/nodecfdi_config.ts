@@ -1,34 +1,32 @@
 import getGitignorePatterns from 'eslint-config-flat-gitignore';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
-import { adonisjsConfig } from '#src/configs/adonisjs_config';
-import { commentsConfig } from '#src/configs/comments_config';
-import { eslintBaseConfig } from '#src/configs/eslint_base_config';
-import { importConfig } from '#src/configs/import_config';
-import { nConfig } from '#src/configs/n_config';
-import { overridesConfig } from '#src/configs/overrides_config';
-import { prettierConfig } from '#src/configs/prettier_config';
-import { promiseConfig } from '#src/configs/promise_config';
-import { regexpConfig } from '#src/configs/regexp_config';
-import { securityConfig } from '#src/configs/security_config';
-import { simpleImportSortConfig } from '#src/configs/simple_import_sort_config';
-import { sonarjsConfig } from '#src/configs/sonarjs_config';
-import { stylisticConfig } from '#src/configs/stylistic_config';
-import { typescriptConfig } from '#src/configs/typescript_config';
-import { unicornConfig } from '#src/configs/unicorn_config';
-import { vitestConfig } from '#src/configs/vitest_config';
-import { vueConfig } from '#src/configs/vue_config';
-import { vueExtendedConfig } from '#src/configs/vue_extended_config';
-import { ignores } from '#src/constants';
-import { type NodecfdiSettings } from '#src/types';
+import { adonisjsConfig } from './configs/adonisjs_config.js';
+import { commentsConfig } from './configs/comments_config.js';
+import { eslintBaseConfig } from './configs/eslint_base_config.js';
+import { importConfig } from './configs/import_config.js';
+import { nConfig } from './configs/n_config.js';
+import { overridesConfig } from './configs/overrides_config.js';
+import { prettierConfig } from './configs/prettier_config.js';
+import { promiseConfig } from './configs/promise_config.js';
+import { regexpConfig } from './configs/regexp_config.js';
+import { securityConfig } from './configs/security_config.js';
+import { simpleImportSortConfig } from './configs/simple_import_sort_config.js';
+import { sonarjsConfig } from './configs/sonarjs_config.js';
+import { stylisticConfig } from './configs/stylistic_config.js';
+import { typescriptConfig } from './configs/typescript_config.js';
+import { unicornConfig } from './configs/unicorn_config.js';
+import { vitestConfig } from './configs/vitest_config.js';
+import { vueConfig } from './configs/vue_config.js';
+import { vueExtendedConfig } from './configs/vue_extended_config.js';
+import { ignores } from './constants.js';
+import { type NodecfdiSettings } from './types.js';
 
 const configureConfig = (
   tsconfigRootDir: string,
   userConfigPrefers?: NodecfdiSettings,
 ): {
-  defineConfig(
-    ...configBlocksToMerge: ConfigWithExtends[]
-  ): ReturnType<(typeof tseslint)['config']>;
+  defineConfig(...configBlocksToMerge: ConfigWithExtends[]): ReturnType<(typeof tseslint)['config']>;
 } => {
   const userConfigChoices = userConfigPrefers ?? {
     vitest: false,
@@ -64,8 +62,7 @@ const configureConfig = (
     if (userConfigChoices.vue) {
       blocksToMerge.push(...vueConfig);
 
-      const resolverGlobalComponents =
-        typeof userConfigChoices.vue === 'boolean' ? undefined : userConfigChoices.vue;
+      const resolverGlobalComponents = typeof userConfigChoices.vue === 'boolean' ? undefined : userConfigChoices.vue;
 
       blocksToMerge.push(vueExtendedConfig(resolverGlobalComponents));
     }
@@ -81,9 +78,7 @@ const configureConfig = (
     blocksToMerge.push(...prettierConfig, ...overridesConfig);
 
     const hasIgnoresRecommended =
-      userConfigChoices.ignores?.recommended === undefined
-        ? true
-        : userConfigChoices.ignores.recommended;
+      userConfigChoices.ignores?.recommended === undefined ? true : userConfigChoices.ignores.recommended;
 
     const hasIgnoresInheritedFromGitIgnore =
       userConfigChoices.ignores?.inheritedFromGitignore === undefined
@@ -94,9 +89,7 @@ const configureConfig = (
       {
         ignores: [
           ...(hasIgnoresRecommended ? ignores : []),
-          ...(hasIgnoresInheritedFromGitIgnore
-            ? getGitignorePatterns({ strict: false }).ignores
-            : []),
+          ...(hasIgnoresInheritedFromGitIgnore ? getGitignorePatterns({ strict: false }).ignores : []),
           ...(userConfigChoices.ignores?.additional ?? []),
         ],
       },

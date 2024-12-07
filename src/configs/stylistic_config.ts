@@ -1,6 +1,6 @@
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupported } from '../constants.js';
 
 export const stylisticConfig: ConfigWithExtends = {
   files: [allFilesSupported],

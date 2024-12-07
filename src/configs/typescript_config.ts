@@ -1,6 +1,6 @@
 import eslint from '@eslint/js';
 import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported, supportedFileTypeJs } from '#src/constants';
+import { allFilesSupported, supportedFileTypeJs } from '../constants.js';
 
 export const typescriptConfig: ConfigWithExtends[] = [
   eslint.configs.recommended,
@@ -23,10 +23,7 @@ export const typescriptConfig: ConfigWithExtends[] = [
       ],
       '@typescript-eslint/consistent-type-assertions': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-      '@typescript-eslint/consistent-type-exports': [
-        'error',
-        { fixMixedExportsWithInlineTypeSpecifier: true },
-      ],
+      '@typescript-eslint/consistent-type-exports': ['error', { fixMixedExportsWithInlineTypeSpecifier: true }],
       '@typescript-eslint/consistent-type-imports': [
         'error',
         {
@@ -65,10 +62,7 @@ export const typescriptConfig: ConfigWithExtends[] = [
       ],
       '@typescript-eslint/no-use-before-define': 'error',
       '@typescript-eslint/prefer-function-type': 'error',
-      '@typescript-eslint/prefer-nullish-coalescing': [
-        'error',
-        { ignorePrimitives: { string: true } },
-      ],
+      '@typescript-eslint/prefer-nullish-coalescing': ['error', { ignorePrimitives: { string: true } }],
       '@typescript-eslint/prefer-optional-chain': 'error',
       '@typescript-eslint/prefer-string-starts-ends-with': 'error',
       '@typescript-eslint/return-await': 'error',

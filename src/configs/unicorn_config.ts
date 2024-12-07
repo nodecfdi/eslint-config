@@ -1,6 +1,6 @@
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupported } from '../constants.js';
 
 export const unicornConfig: ConfigWithExtends[] = [
   eslintPluginUnicorn.configs['flat/recommended'],

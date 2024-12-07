@@ -1,6 +1,6 @@
 import pluginPromise from 'eslint-plugin-promise';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported } from '#src/constants';
+import { allFilesSupported } from '../constants.js';
 
 export const promiseConfig: ConfigWithExtends[] = [
   pluginPromise.configs['flat/recommended'],

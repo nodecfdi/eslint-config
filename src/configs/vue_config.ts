@@ -1,6 +1,6 @@
 import pluginVue from 'eslint-plugin-vue';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allJsExtensions } from '#src/constants';
+import { allJsExtensions } from '../constants.js';
 
 export const vueConfig: ConfigWithExtends[] = [
   ...pluginVue.configs['flat/recommended'],
@@ -56,13 +56,7 @@ export const vueConfig: ConfigWithExtends[] = [
     },
   },
   {
-    files: [
-      '**/pages/**/*.vue',
-      '**/layouts/**/*.vue',
-      '**/components/**/*.vue',
-      '**/app.{js,ts,vue}',
-      '**/error.vue',
-    ],
+    files: ['**/pages/**/*.vue', '**/layouts/**/*.vue', '**/components/**/*.vue', '**/app.{js,ts,vue}', '**/error.vue'],
     rules: {
       'vue/multi-word-component-names': 'off',
       'security/detect-possible-timing-attacks': 'off',

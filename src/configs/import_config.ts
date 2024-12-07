@@ -1,6 +1,7 @@
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import eslintPluginImportX from 'eslint-plugin-import-x';
 import { type ConfigWithExtends } from 'typescript-eslint';
-import { allFilesSupported, allJsExtensions } from '#src/constants';
+import { allFilesSupported, allJsExtensions } from '../constants.js';
 
 export const importConfig: ConfigWithExtends[] = [
   eslintPluginImportX.flatConfigs.recommended as ConfigWithExtends,
@@ -39,10 +40,7 @@ export const importConfig: ConfigWithExtends[] = [
       'import-x/no-relative-parent-imports': 'off',
       'import-x/no-restricted-paths': 'off',
       'import-x/no-self-import': 'error',
-      'import-x/no-unassigned-import': [
-        'error',
-        { allow: ['**/*.{css,sass,scss}', 'reflect-metadata'] },
-      ],
+      'import-x/no-unassigned-import': ['error', { allow: ['**/*.{css,sass,scss}', 'reflect-metadata'] }],
       'import-x/no-unused-modules': 'off',
       'import-x/no-useless-path-segments': [
         'error',
@@ -64,6 +62,13 @@ export const importConfig: ConfigWithExtends[] = [
       'import-x/no-unresolved': 'off',
       'import-x/extensions': 'off',
       'import-x/no-deprecated': 'off',
+    },
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+        }),
+      ],
     },
   },
   {
