@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.3.7](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.6...v2.3.7)
+## [v2.4.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.7...v2.4.0)
+
+### Commits
+
+- refactor: :recycle: remove usage of imports package json alias [`8f5c691`](https://luffynando.github.com/nodecfdi/eslint-config/commit/8f5c691db7e0084b0728f049a463fc99bb021c38)
+- build: :construction: change from tshy to tsup for better generation lib and support to tree shake [`c9d54f6`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c9d54f6ec983fc6e90dc6e513bf907723612142e)
+
+## [v2.3.7](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.6...v2.3.7) - 2024-11-30
 
 ### Commits
 
 - chore: :arrow_up: update dependencies [`84fcb10`](https://luffynando.github.com/nodecfdi/eslint-config/commit/84fcb102200f1603323ab6326e7be259bc192f5d)
+- chore(release): :tada: 2.3.7 [`fdcb872`](https://luffynando.github.com/nodecfdi/eslint-config/commit/fdcb8728f862f5c5cbcddbf799602c17799245b0)
 - fix: :bug: resolve problem with no param reasign its falsy valus [`43e90d5`](https://luffynando.github.com/nodecfdi/eslint-config/commit/43e90d5f59fbde62fd566c279c660ee38c1dbfe2)
 
 ## [v2.3.6](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.5...v2.3.6) - 2024-11-26
