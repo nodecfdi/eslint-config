@@ -25,7 +25,7 @@ export const sonarjsConfig: ConfigWithExtends[] = [
       'sonarjs/new-cap': 'off',
       'sonarjs/no-os-command-from-path': 'off',
       'sonarjs/slow-regex': 'off',
-      'sonarjs/sonar-no-unused-vars': 'off',
+      'sonarjs/no-unused-vars': 'off',
       'sonarjs/no-commented-code': 'off',
       'sonarjs/no-misused-promises': 'off',
       'sonarjs/no-hardcoded-credentials': 'off',
@@ -36,6 +36,12 @@ export const sonarjsConfig: ConfigWithExtends[] = [
       'sonarjs/no-clear-text-protocols': 'off',
       'sonarjs/no-nested-functions': ['error', { threshold: 5 }],
       ...disableTypescriptEslintRulesOverlapped,
+    },
+  },
+  {
+    files: ['**/models/**/*.ts', '**/database/factories/**/*.ts'],
+    rules: {
+      'sonarjs/no-hardcoded-passwords': 'off',
     },
   },
 ];
