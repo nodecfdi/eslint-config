@@ -5,12 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.4.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.7...v2.4.0)
+## [v2.4.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.0...v2.4.1)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`313d11e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/313d11e3c67b5c1614887d660ab1a57ca224f483)
+- fix: :bug: resolve no hardcoded passwords and change delete sonar on rules [`6c4e0be`](https://luffynando.github.com/nodecfdi/eslint-config/commit/6c4e0be212f896bf7e0dc4e285285e834337402c)
+
+## [v2.4.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.7...v2.4.0) - 2024-12-07
 
 ### Commits
 
 - refactor: :recycle: remove usage of imports package json alias [`8f5c691`](https://luffynando.github.com/nodecfdi/eslint-config/commit/8f5c691db7e0084b0728f049a463fc99bb021c38)
 - build: :construction: change from tshy to tsup for better generation lib and support to tree shake [`c9d54f6`](https://luffynando.github.com/nodecfdi/eslint-config/commit/c9d54f6ec983fc6e90dc6e513bf907723612142e)
+- chore(release): :tada: 2.4.0 [`ce3ecf1`](https://luffynando.github.com/nodecfdi/eslint-config/commit/ce3ecf19e0afe79fc553382b32b533e8c024b64d)
 
 ## [v2.3.7](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.3.6...v2.3.7) - 2024-11-30
 
