@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.4.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.0...v2.4.1)
+## [v2.4.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.1...v2.4.2)
 
 ### Commits
 
+- chore: :arrow_up: update dependencies for maintenance [`7576d78`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7576d781c905860b4fb1622d3d1b7a7f022bc7e0)
+- refactor: :recycle: add missing ignore entry and disable missing duplicate typescript rule [`9da653e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/9da653e255a45e703ad9291e0d5b748a4bc3864e)
+
+## [v2.4.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.0...v2.4.1) - 2024-12-13
+
+### Commits
+
+- chore(release): :tada: 2.4.1 [`81cb20b`](https://luffynando.github.com/nodecfdi/eslint-config/commit/81cb20bef3efcdd3c3cdff733255be12c00a18b8)
 - chore: :arrow_up: update dependencies [`313d11e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/313d11e3c67b5c1614887d660ab1a57ca224f483)
 - fix: :bug: resolve no hardcoded passwords and change delete sonar on rules [`6c4e0be`](https://luffynando.github.com/nodecfdi/eslint-config/commit/6c4e0be212f896bf7e0dc4e285285e834337402c)
 
