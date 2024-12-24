@@ -35,7 +35,7 @@
     "version": "pnpm run build && pnpm run changelog"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@nodecfdi/prettier-config": "^1.4.0",
     "@nodecfdi/tsconfig": "^1.7.3",
@@ -56,14 +56,14 @@
   "dependencies": {
     "@adonisjs/eslint-plugin": "^2.0.0-beta.5",
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
-    "@eslint/js": "^9.16.0",
+    "@eslint/js": "^9.17.0",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
-    "@vitest/eslint-plugin": "^1.1.16",
+    "@vitest/eslint-plugin": "^1.1.20",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.7.0",
-    "eslint-plugin-import-x": "^4.5.0",
-    "eslint-plugin-n": "^17.15.0",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-security": "^3.0.1",
@@ -71,8 +71,8 @@
     "eslint-plugin-sonarjs": "^3.0.1",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.13.0",
-    "typescript-eslint": "^8.18.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.18.2",
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
@@ -99,7 +99,7 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.1",
   "pnpm": {
     "overrides": {
       "eslint-import-resolver-typescript>eslint-plugin-import": "-"
