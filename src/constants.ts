@@ -40,4 +40,5 @@ export const ignores = [
   '!.github',
   '!.vscode',
   `**/ecosystem.config.{${allJsExtensions}}`,
+  '**/components.d.ts',
 ];

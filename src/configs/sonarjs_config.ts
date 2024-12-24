@@ -8,6 +8,8 @@ const disableTypescriptEslintRulesOverlapped: TSESLint.FlatConfig.Rules = {
   '@typescript-eslint/default-param-last': 'off',
   '@typescript-eslint/no-base-to-string': 'off',
   '@typescript-eslint/prefer-promise-reject-errors': 'off',
+  '@typescript-eslint/prefer-return-this-type': 'off',
+  '@typescript-eslint/no-unnecessary-type-constraint': 'off',
   'regexp/prefer-d': 'off',
   'sonarjs/no-empty-function': 'off',
   'sonarjs/no-unused-expressions': 'off',
