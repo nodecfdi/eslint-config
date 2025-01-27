@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.4.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.1...v2.4.2)
+## [v2.4.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.2...v2.4.3)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`30705f7`](https://luffynando.github.com/nodecfdi/eslint-config/commit/30705f7485ad712199187a7a96b8177363980ce5)
+- fix: :bug: resolve sonarjs errors incompatible and redundant rule [`420fab4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/420fab44838fdcc400a659d79ed14bc0c095ebaf)
+
+## [v2.4.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.1...v2.4.2) - 2024-12-23
 
 ### Commits
 
 - chore: :arrow_up: update dependencies for maintenance [`7576d78`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7576d781c905860b4fb1622d3d1b7a7f022bc7e0)
+- chore(release): :tada: 2.4.2 [`7a99dfc`](https://luffynando.github.com/nodecfdi/eslint-config/commit/7a99dfce42e110d28b9a6ebfb6cd4a273a5298d7)
 - refactor: :recycle: add missing ignore entry and disable missing duplicate typescript rule [`9da653e`](https://luffynando.github.com/nodecfdi/eslint-config/commit/9da653e255a45e703ad9291e0d5b748a4bc3864e)
 
 ## [v2.4.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.0...v2.4.1) - 2024-12-13
