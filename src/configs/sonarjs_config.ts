@@ -10,6 +10,7 @@ const disableTypescriptEslintRulesOverlapped: TSESLint.FlatConfig.Rules = {
   '@typescript-eslint/prefer-promise-reject-errors': 'off',
   '@typescript-eslint/prefer-return-this-type': 'off',
   '@typescript-eslint/no-unnecessary-type-constraint': 'off',
+  '@typescript-eslint/no-deprecated': 'off',
   'regexp/prefer-d': 'off',
   'sonarjs/no-empty-function': 'off',
   'sonarjs/no-unused-expressions': 'off',
@@ -37,13 +38,8 @@ export const sonarjsConfig: ConfigWithExtends[] = [
       // Disable because xml namespaces need usage of http protocol
       'sonarjs/no-clear-text-protocols': 'off',
       'sonarjs/no-nested-functions': ['error', { threshold: 5 }],
-      ...disableTypescriptEslintRulesOverlapped,
-    },
-  },
-  {
-    files: ['**/models/**/*.ts', '**/database/factories/**/*.ts'],
-    rules: {
       'sonarjs/no-hardcoded-passwords': 'off',
+      ...disableTypescriptEslintRulesOverlapped,
     },
   },
 ];
