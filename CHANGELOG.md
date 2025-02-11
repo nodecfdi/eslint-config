@@ -5,11 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.4.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.2...v2.4.3)
+## [v2.4.4](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.3...v2.4.4)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`36fb405`](https://luffynando.github.com/nodecfdi/eslint-config/commit/36fb405f10c554d1e5d1dd8e575fe50017c2330a)
+
+## [v2.4.3](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.2...v2.4.3) - 2025-01-26
 
 ### Commits
 
 - chore: :arrow_up: update dependencies [`30705f7`](https://luffynando.github.com/nodecfdi/eslint-config/commit/30705f7485ad712199187a7a96b8177363980ce5)
+- chore(release): :tada: 2.4.3 [`bdcf689`](https://luffynando.github.com/nodecfdi/eslint-config/commit/bdcf68920d1cb4be81b0c67042a5c181a040d671)
 - fix: :bug: resolve sonarjs errors incompatible and redundant rule [`420fab4`](https://luffynando.github.com/nodecfdi/eslint-config/commit/420fab44838fdcc400a659d79ed14bc0c095ebaf)
 
 ## [v2.4.2](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.1...v2.4.2) - 2024-12-23
