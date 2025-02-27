@@ -11,7 +11,6 @@ const disableTypescriptEslintRulesOverlapped: TSESLint.FlatConfig.Rules = {
   '@typescript-eslint/prefer-return-this-type': 'off',
   '@typescript-eslint/no-unnecessary-type-constraint': 'off',
   '@typescript-eslint/no-deprecated': 'off',
-  'regexp/prefer-d': 'off',
   'sonarjs/no-empty-function': 'off',
   'sonarjs/no-unused-expressions': 'off',
 };

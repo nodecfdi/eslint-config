@@ -3,7 +3,7 @@ import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '../constants.js';
 
 export const unicornConfig: ConfigWithExtends[] = [
-  eslintPluginUnicorn.configs['flat/recommended'],
+  eslintPluginUnicorn.configs.recommended,
   {
     files: [allFilesSupported],
     rules: {

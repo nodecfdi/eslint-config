@@ -1,5 +1,5 @@
 import getGitignorePatterns from 'eslint-config-flat-gitignore';
-import tseslint, { type ConfigWithExtends } from 'typescript-eslint';
+import { config, type ConfigArray, type ConfigWithExtends, parser } from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
 import { adonisjsConfig } from './configs/adonisjs_config.js';
 import { commentsConfig } from './configs/comments_config.js';
@@ -9,8 +9,6 @@ import { nConfig } from './configs/n_config.js';
 import { overridesConfig } from './configs/overrides_config.js';
 import { prettierConfig } from './configs/prettier_config.js';
 import { promiseConfig } from './configs/promise_config.js';
-import { regexpConfig } from './configs/regexp_config.js';
-import { securityConfig } from './configs/security_config.js';
 import { simpleImportSortConfig } from './configs/simple_import_sort_config.js';
 import { sonarjsConfig } from './configs/sonarjs_config.js';
 import { stylisticConfig } from './configs/stylistic_config.js';
@@ -26,14 +24,14 @@ const configureConfig = (
   tsconfigRootDir: string,
   userConfigPrefers?: NodecfdiSettings,
 ): {
-  defineConfig(...configBlocksToMerge: ConfigWithExtends[]): ReturnType<(typeof tseslint)['config']>;
+  defineConfig: (...configBlocksToMerge: ConfigWithExtends[]) => ConfigArray;
 } => {
   const userConfigChoices = userConfigPrefers ?? {
     vitest: false,
     adonisjs: false,
     vue: false,
     projectService: true,
-    sonarjs: false,
+    sonarjs: true,
     n: false,
   };
 
@@ -43,11 +41,9 @@ const configureConfig = (
       eslintBaseConfig,
       ...unicornConfig,
       simpleImportSortConfig,
-      ...regexpConfig,
       ...importConfig,
       ...commentsConfig,
       ...promiseConfig,
-      ...securityConfig,
       stylisticConfig,
     ];
 
@@ -77,13 +73,9 @@ const configureConfig = (
 
     blocksToMerge.push(...prettierConfig, ...overridesConfig);
 
-    const hasIgnoresRecommended =
-      userConfigChoices.ignores?.recommended === undefined ? true : userConfigChoices.ignores.recommended;
+    const hasIgnoresRecommended = userConfigChoices.ignores?.recommended ?? true;
 
-    const hasIgnoresInheritedFromGitIgnore =
-      userConfigChoices.ignores?.inheritedFromGitignore === undefined
-        ? true
-        : userConfigChoices.ignores.inheritedFromGitignore;
+    const hasIgnoresInheritedFromGitIgnore = userConfigChoices.ignores?.inheritedFromGitignore ?? true;
 
     blocksToMerge.push(
       {
@@ -98,12 +90,12 @@ const configureConfig = (
 
     const vueSupport = userConfigChoices.vue ?? false;
 
-    return tseslint.config(
+    return config(
       {
         languageOptions: {
-          parser: vueSupport ? vueParser : tseslint.parser,
+          parser: vueSupport ? vueParser : parser,
           parserOptions: {
-            parser: vueSupport ? tseslint.parser : undefined,
+            parser: vueSupport ? parser : undefined,
             ecmaVersion: 'latest',
             sourceType: 'module',
             extraFileExtensions: vueSupport ? ['.vue'] : undefined,

@@ -35,7 +35,7 @@ export const typescriptConfig: ConfigWithExtends[] = [
       '@typescript-eslint/dot-notation': 'error',
       '@typescript-eslint/explicit-member-accessibility': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'error',
-      '@typescript-eslint/method-signature-style': ['error', 'method'],
+      '@typescript-eslint/method-signature-style': 'off',
       '@typescript-eslint/no-array-constructor': 'off',
       '@typescript-eslint/no-empty-function': 'error',
       '@typescript-eslint/no-inferrable-types': 'error',
