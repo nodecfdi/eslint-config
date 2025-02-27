@@ -12,6 +12,9 @@
 
 :mexico: La documentación del proyecto está en español porque ese es el lenguaje principal de los usuarios.
 
+> [!WARNING]
+> This package is native [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) and no longer provides a CommonJS export. If your project uses CommonJS, you will have to [convert to ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c). Please don't open issues for questions regarding CommonJS / ESM.
+
 ## Instalación
 
 ### NPM
@@ -44,6 +47,9 @@ const { defineConfig } = nodecfdiConfig(import.meta.dirname);
 
 export default defineConfig(); // Puedes agregar mas reglas o bloques de configuracion dentro de esta funcion
 ```
+
+> [!NOTE]  
+> Por defecto tiene habilitado las siguientes opciones: projectService -> true, sonarjs -> true
 
 Si deseas aplicar algun ajuste puedes y/o personalización puedes hacerlo de la siguiente manera:
 
@@ -118,8 +124,6 @@ type NodecfdiSettings = {
 
 Puedes obtener soporte abriendo un ticket en Github.
 
-Adicionalmente, esta librería pertenece a la comunidad [OcelotlStudio](https://ocelotlstudio.com), así que puedes usar los mismos canales de comunicación para obtener ayuda de algún miembro de la comunidad.
-
 ## Compatibilidad
 
 Esta librería se mantendrá compatible con al menos la versión con
@@ -133,7 +137,7 @@ Las contribuciones con bienvenidas. Por favor lee [CONTRIBUTING][] para más det
 
 ## Copyright and License
 
-The `@nodecfdi/eslint-config` library is copyright © [NodeCfdi](https://github.com/nodecfdi) - [OcelotlStudio](https://ocelotlstudio.com) and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
+The `@nodecfdi/eslint-config` library is copyright © [NodeCfdi](https://github.com/nodecfdi) and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
 [contributing]: https://github.com/nodecfdi/.github/blob/main/docs/CONTRIBUTING.md
 [changelog]: https://github.com/nodecfdi/eslint-config/blob/main/CHANGELOG.md
