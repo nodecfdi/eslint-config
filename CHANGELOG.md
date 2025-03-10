@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.0.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.4...v3.0.0)
+## [v3.1.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.0.0...v3.1.0)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`481e2f7`](https://luffynando.github.com/nodecfdi/eslint-config/commit/481e2f79134cca82eecedc405acb901bdb40a94e)
+- fix: :bug: resolve rules overlapped and bad for duplicate [`ebeaedf`](https://luffynando.github.com/nodecfdi/eslint-config/commit/ebeaedfa7025fe1431145ad968163e340b34b0a7)
+
+## [v3.0.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v2.4.4...v3.0.0) - 2025-02-26
 
 ### Commits
 
