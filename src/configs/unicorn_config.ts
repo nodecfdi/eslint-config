@@ -37,6 +37,8 @@ export const unicornConfig: ConfigWithExtends[] = [
       'unicorn/no-thenable': 'off',
       // Not expiring to-do comments
       'unicorn/expiring-todo-comments': 'off',
+      // Disable because match other functions with object is not array
+      'unicorn/no-array-reduce': 'off',
     },
   },
 ];

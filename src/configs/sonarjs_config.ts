@@ -38,6 +38,8 @@ export const sonarjsConfig: ConfigWithExtends[] = [
       'sonarjs/no-clear-text-protocols': 'off',
       'sonarjs/no-nested-functions': ['error', { threshold: 5 }],
       'sonarjs/no-hardcoded-passwords': 'off',
+      'sonarjs/void-use': 'off',
+      'sonarjs/no-useless-intersection': 'off',
       ...disableTypescriptEslintRulesOverlapped,
     },
   },
