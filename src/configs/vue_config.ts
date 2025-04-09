@@ -56,7 +56,7 @@ export const vueConfig: ConfigWithExtends[] = [
     },
   },
   {
-    files: ['**/pages/**/*.vue', '**/layouts/**/*.vue', '**/components/**/*.vue', '**/app.{js,ts,vue}', '**/error.vue'],
+    files: ['**/pages/**/*.vue', '**/layouts/**/*.vue', '**/components/**/*.vue', '**/dialogs/**/*.vue', '**/app.{js,ts,vue}', '**/error.vue'],
     rules: {
       'vue/multi-word-component-names': 'off',
       '@typescript-eslint/naming-convention': 'off',

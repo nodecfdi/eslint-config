@@ -34,6 +34,7 @@ export const ignores = [
   '**/*.min.*',
   '**/.pnpm-store/**',
   '**/.adonisjs/**',
+  '**/.husky/**',
   'LICENSE*',
   'CHANGELOG.md',
   '__snapshots__',
