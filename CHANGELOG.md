@@ -5,13 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.1.1...v3.2.0)
+## [v3.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.2.0...v3.2.1)
+
+### Commits
+
+- chore: :arrow_up:  - update dependencies [`b120c76`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b120c76294cb20a9408efa7cf8d9c6e71137888b)
+
+## [v3.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.1.1...v3.2.0) - 2025-04-09
 
 ### Commits
 
 - chore: :arrow_up:  - upgrade dependencies [`a497ec0`](https://luffynando.github.com/nodecfdi/eslint-config/commit/a497ec09a601fbc2b9f5d0c26cd997655add16a5)
+- chore(release): :tada: 3.2.0 [`2cff48a`](https://luffynando.github.com/nodecfdi/eslint-config/commit/2cff48a04c770a9b7a4b2c7c4efc3d2807c86d70)
 - style: :lipstick:  - apply missing format [`ebe1fd6`](https://luffynando.github.com/nodecfdi/eslint-config/commit/ebe1fd63851a772d7096341086ddfbf1ba368346)
-- feat: :zap:  - add missing ignore .husky files and vue name on dialogs directory [`32f71d3`](https://luffynando.github.com/nodecfdi/eslint-config/commit/32f71d3ababe85a83976937ffc7d4ed1b9b4f99b)
 
 ## [v3.1.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.1.0...v3.1.1) - 2025-03-24
 
