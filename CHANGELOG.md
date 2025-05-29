@@ -5,11 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.2.0...v3.2.1)
+## [v3.3.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.2.1...v3.3.0)
+
+### Commits
+
+- chore: :arrow_up: update dependencies [`bf8f067`](https://luffynando.github.com/nodecfdi/eslint-config/commit/bf8f0672d8da9f1f159b02f129ac955e5a007788)
+- refactor: :recycle: move from latest change on stylistic plugin [`23c7ffd`](https://luffynando.github.com/nodecfdi/eslint-config/commit/23c7ffd4f6431a7a83864459db477f3e5e97c80c)
+- chore: :construction: add eslint config for usage current build [`1dea71c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/1dea71cf2460ca34b94f458dc7d772816e5a6680)
+
+## [v3.2.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.2.0...v3.2.1) - 2025-05-05
 
 ### Commits
 
 - chore: :arrow_up:  - update dependencies [`b120c76`](https://luffynando.github.com/nodecfdi/eslint-config/commit/b120c76294cb20a9408efa7cf8d9c6e71137888b)
+- chore(release): :tada: 3.2.1 [`5139ac9`](https://luffynando.github.com/nodecfdi/eslint-config/commit/5139ac9b468dede5e7465004ca9de5aff435bc5a)
 
 ## [v3.2.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.1.1...v3.2.0) - 2025-04-09
 
