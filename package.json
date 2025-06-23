@@ -48,13 +48,11 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
     "@eslint/js": "^9.29.0",
     "@stylistic/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^8.35.0",
-    "@typescript-eslint/utils": "^8.35.0",
     "@vitest/eslint-plugin": "^1.2.7",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-import-resolver-typescript": "^4.4.3",
-    "eslint-plugin-import-x": "^4.15.2",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^17.20.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
@@ -91,9 +89,6 @@
   },
   "packageManager": "pnpm@10.12.2",
   "pnpm": {
-    "overrides": {
-      "eslint-import-resolver-typescript>eslint-plugin-import": "-"
-    },
     "onlyBuiltDependencies": [
       "esbuild",
       "unrs-resolver"
