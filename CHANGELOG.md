@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.3.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.3.0...v3.3.1)
+## [v3.4.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.3.1...v3.4.0)
+
+### Commits
+
+- refactor: :recycle: change import-x for import for recent slow performance with import-x [`32caddf`](https://luffynando.github.com/nodecfdi/eslint-config/commit/32caddf1636b17374b5cda9b33ad72b1b18e6c9f)
+- refactor: :recycle: remove only type dependency and use composable type [`2463213`](https://luffynando.github.com/nodecfdi/eslint-config/commit/24632139d20884faea3b6b79088415be2ead2789)
+
+## [v3.3.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.3.0...v3.3.1) - 2025-06-23
 
 ### Commits
 
 - chore: :arrow_up: update dependencies [`bb3439c`](https://luffynando.github.com/nodecfdi/eslint-config/commit/bb3439c28a9dbcc996ee1bd94466061dc298ebf4)
+- chore(release): :tada: 3.3.1 [`ba4ca84`](https://luffynando.github.com/nodecfdi/eslint-config/commit/ba4ca84e0a528d7cff59d4b2feac939d02a1be2c)
 
 ## [v3.3.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.2.1...v3.3.0) - 2025-05-28
 
