@@ -1,4 +1,8 @@
-import { type TSESLint } from '@typescript-eslint/utils';
+import { type ConfigWithExtends } from 'typescript-eslint';
+
+type LanguageOptions = NonNullable<ConfigWithExtends['languageOptions']>;
+
+type ParserOptions = NonNullable<LanguageOptions['parserOptions']>;
 
 export type NodecfdiSettings = {
   /**
@@ -29,7 +33,7 @@ export type NodecfdiSettings = {
   /**
    * Typescript eslint project service option
    */
-  projectService?: TSESLint.FlatConfig.ParserOptions['projectService'];
+  projectService?: ParserOptions['projectService'];
   /**
    * This setting apply some ignore patterns to the whole config.
    */

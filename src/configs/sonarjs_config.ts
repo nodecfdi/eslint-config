@@ -1,9 +1,8 @@
-import { type TSESLint } from '@typescript-eslint/utils';
 import sonarjs from 'eslint-plugin-sonarjs';
 import { type ConfigWithExtends } from 'typescript-eslint';
 import { allFilesSupported } from '../constants.js';
 
-const disableTypescriptEslintRulesOverlapped: TSESLint.FlatConfig.Rules = {
+const disableTypescriptEslintRulesOverlapped: ConfigWithExtends['rules'] = {
   '@typescript-eslint/no-redundant-type-constituents': 'off',
   '@typescript-eslint/default-param-last': 'off',
   '@typescript-eslint/no-base-to-string': 'off',
