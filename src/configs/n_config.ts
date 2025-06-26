@@ -53,7 +53,7 @@ export const nConfig: ConfigWithExtends = {
         message: 'Import clearImmediate from `node:timers` instead',
       },
     ],
-    'import-x/no-unresolved': 'off',
+    'import/no-unresolved': 'off',
     'n/callback-return': 'error',
     'n/exports-style': 'off',
     'n/file-extension-in-import': 'off',

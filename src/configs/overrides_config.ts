@@ -20,14 +20,14 @@ export const overridesConfig: ConfigWithExtends[] = [
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       'unicorn/no-anonymous-default-export': 'off',
-      'import-x/no-unassigned-import': 'off',
+      'import/no-unassigned-import': 'off',
       '@typescript-eslint/unbound-method': 'off',
     },
   },
   {
     files: ['ace.js'],
     rules: {
-      'import-x/no-unassigned-import': 'off',
+      'import/no-unassigned-import': 'off',
     },
   },
   {

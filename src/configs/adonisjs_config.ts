@@ -11,7 +11,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
     rules: {
       '@adonisjs/prefer-lazy-controller-import': 'error',
       '@adonisjs/prefer-lazy-listener-import': 'error',
-      'import-x/no-cycle': 'off',
+      'import/no-cycle': 'off',
     },
   },
   {
@@ -60,7 +60,7 @@ export const adonisjsConfig: ConfigWithExtends[] = [
   {
     files: ['**/services/**/*.ts'],
     rules: {
-      'import-x/no-mutable-exports': 'off',
+      'import/no-mutable-exports': 'off',
     },
   },
   {
