@@ -94,7 +94,6 @@ export const typescriptConfig: ConfigWithExtends[] = [
         },
       ],
       '@typescript-eslint/no-empty-object-type': ['error', { allowInterfaces: 'always' }],
-
       '@typescript-eslint/naming-convention': [
         'error',
         {
@@ -143,6 +142,7 @@ export const typescriptConfig: ConfigWithExtends[] = [
           format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
         },
       ],
+      '@typescript-eslint/no-misused-spread': 'off',
     },
   },
   {

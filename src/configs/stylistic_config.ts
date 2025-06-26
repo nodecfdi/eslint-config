@@ -19,8 +19,8 @@ export const stylisticConfig: ConfigWithExtends = {
       //require blank lines before all return statements, like the newline-before-return rule.
       { blankLine: 'always', next: 'return', prev: '*' },
     ],
-    '@stylistic/lines-between-class-members': ['error', 'always'],
-    '@stylistic/semi': ['error', 'always'],
+    '@stylistic/lines-between-class-members': 'error',
+    '@stylistic/semi': 'error',
     '@stylistic/no-extra-semi': 'error',
     '@stylistic/comma-spacing': 'error',
     '@stylistic/quote-props': ['error', 'consistent'],
