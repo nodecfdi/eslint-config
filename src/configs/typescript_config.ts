@@ -4,10 +4,9 @@ import { allFilesSupported, supportedFileTypeJs } from '../constants.js';
 
 export const typescriptConfig: ConfigWithExtends[] = [
   eslint.configs.recommended,
-  ...tseslint.configs.strictTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
   {
     files: [allFilesSupported],
+    extends: [tseslint.configs.strictTypeChecked, tseslint.configs.stylisticTypeChecked],
     rules: {
       '@typescript-eslint/no-base-to-string': 'off',
       '@typescript-eslint/no-this-alias': 'off',
@@ -155,6 +154,6 @@ export const typescriptConfig: ConfigWithExtends[] = [
   },
   {
     files: [supportedFileTypeJs],
-    ...tseslint.configs.disableTypeChecked,
+    extends: [tseslint.configs.disableTypeChecked],
   },
 ];

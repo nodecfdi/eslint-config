@@ -1,11 +1,12 @@
 import pluginVue from 'eslint-plugin-vue';
-import { type ConfigWithExtends } from 'typescript-eslint';
+import { type ConfigWithExtends, parser } from 'typescript-eslint';
+import vueParser from 'vue-eslint-parser';
 import { allJsExtensions } from '../constants.js';
 
 export const vueConfig: ConfigWithExtends[] = [
-  ...pluginVue.configs['flat/recommended'],
   {
     files: ['**/*.vue'],
+    extends: [pluginVue.configs['flat/recommended']],
     rules: {
       'vue/block-lang': [
         'error',
@@ -45,6 +46,13 @@ export const vueConfig: ConfigWithExtends[] = [
       'vue/static-class-names-order': 'off',
       // Disable usage in vue files
       'unicorn/filename-case': 'off',
+    },
+    languageOptions: {
+      parser: vueParser,
+      parserOptions: {
+        parser,
+        extraFileExtensions: ['.vue'],
+      },
     },
   },
   {

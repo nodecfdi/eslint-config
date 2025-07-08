@@ -1,6 +1,5 @@
 import getGitignorePatterns from 'eslint-config-flat-gitignore';
-import { config, type ConfigArray, type ConfigWithExtends, parser } from 'typescript-eslint';
-import vueParser from 'vue-eslint-parser';
+import { config, type ConfigArray, type ConfigWithExtends } from 'typescript-eslint';
 import { adonisjsConfig } from './configs/adonisjs_config.js';
 import { commentsConfig } from './configs/comments_config.js';
 import { eslintBaseConfig } from './configs/eslint_base_config.js';
@@ -17,7 +16,7 @@ import { unicornConfig } from './configs/unicorn_config.js';
 import { vitestConfig } from './configs/vitest_config.js';
 import { vueConfig } from './configs/vue_config.js';
 import { vueExtendedConfig } from './configs/vue_extended_config.js';
-import { ignores } from './constants.js';
+import { allFilesSupported, ignores } from './constants.js';
 import { type NodecfdiSettings } from './types.js';
 
 const configureConfig = (
@@ -88,17 +87,13 @@ const configureConfig = (
       ...configBlocksToMerge,
     );
 
-    const vueSupport = userConfigChoices.vue ?? false;
-
     return config(
       {
+        files: [allFilesSupported],
         languageOptions: {
-          parser: vueSupport ? vueParser : parser,
           parserOptions: {
-            parser: vueSupport ? parser : undefined,
             ecmaVersion: 'latest',
             sourceType: 'module',
-            extraFileExtensions: vueSupport ? ['.vue'] : undefined,
             projectService: userConfigChoices.projectService ?? {
               allowDefaultProject: ['*.js', '*.cjs'],
             },
