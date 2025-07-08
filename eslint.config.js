@@ -1,6 +1,6 @@
 // @ts-check
-import nodecfdiConfig from '@nodecfdi/eslint-config';
+import nodecfdiConfig from '@nodecfdi/eslint-config/async';
 
-const { defineConfig } = nodecfdiConfig(import.meta.dirname, { sonarjs: true, n: true });
+const { defineConfig } = await nodecfdiConfig(import.meta.dirname, { sonarjs: true, n: true });
 
 export default defineConfig();
