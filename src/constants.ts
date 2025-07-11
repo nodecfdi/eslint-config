@@ -45,4 +45,6 @@ export const ignores = [
   '**/vite.config.*.timestamp*',
   '**/vitest.config.*.timestamp*',
   '**/vite.config.ts.timestamp*',
+  '**/*.tsconfig.json',
+  '**/tsconfig.json',
 ];
