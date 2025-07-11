@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.5.0-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.4.1...v3.5.0-0)
+## [v3.5.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.5.0-0...v3.5.0)
+
+### Commits
+
+- feat: :sparkles: add support to nuxt and nx configs [`2968271`](https://luffynando.github.com/nodecfdi/eslint-config/commit/29682716359a0ca667a229362bf153e4f7273c5e)
+- chore: :construction: ignore tsconfig [`30daaa3`](https://luffynando.github.com/nodecfdi/eslint-config/commit/30daaa301ab825f0b0e62394e928adf176d406f8)
+
+## [v3.5.0-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.4.1...v3.5.0-0) - 2025-07-08
 
 ### Commits
 
