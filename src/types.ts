@@ -27,9 +27,17 @@ export type NodecfdiSettings = {
    */
   sonarjs?: boolean;
   /**
-   * Node using n support
+   * N support
    */
   n?: boolean;
+  /**
+   * NX support
+   */
+  nx?: boolean;
+  /**
+   * Nuxt support
+   */
+  nuxt?: boolean;
   /**
    * Typescript eslint project service option
    */

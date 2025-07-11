@@ -46,4 +46,10 @@ export const overridesConfig: ConfigWithExtends[] = [
       'no-use-before-define': 'off',
     },
   },
+  {
+    files: ['**/*.json'],
+    rules: {
+      'unicorn/prevent-abbreviations': 'off',
+    },
+  },
 ];

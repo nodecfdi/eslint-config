@@ -5,6 +5,8 @@ import { commentsConfig } from './configs/comments_config.js';
 import { eslintBaseConfig } from './configs/eslint_base_config.js';
 import { importConfig } from './configs/import_config.js';
 import { nConfig } from './configs/n_config.js';
+import { nuxtConfig } from './configs/nuxt_config.js';
+import { nxConfig } from './configs/nx_config.js';
 import { overridesConfig } from './configs/overrides_config.js';
 import { prettierConfig } from './configs/prettier_config.js';
 import { promiseConfig } from './configs/promise_config.js';
@@ -32,6 +34,8 @@ const configureConfig = (
     projectService: true,
     sonarjs: true,
     n: false,
+    nx: false,
+    nuxt: false,
   };
 
   const defineConfig = (...configBlocksToMerge: ConfigWithExtends[]) => {
@@ -56,9 +60,7 @@ const configureConfig = (
 
     if (userConfigChoices.vue) {
       blocksToMerge.push(...vueConfig);
-
       const resolverGlobalComponents = typeof userConfigChoices.vue === 'boolean' ? undefined : userConfigChoices.vue;
-
       blocksToMerge.push(vueExtendedConfig(resolverGlobalComponents));
     }
 
@@ -70,10 +72,16 @@ const configureConfig = (
       blocksToMerge.push(nConfig);
     }
 
+    if (userConfigChoices.nx) {
+      blocksToMerge.push(...nxConfig);
+    }
+
+    if (userConfigChoices.nuxt) {
+      blocksToMerge.push(nuxtConfig);
+    }
+
     blocksToMerge.push(...prettierConfig, ...overridesConfig);
-
     const hasIgnoresRecommended = userConfigChoices.ignores?.recommended ?? true;
-
     const hasIgnoresInheritedFromGitIgnore = userConfigChoices.ignores?.inheritedFromGitignore ?? true;
 
     blocksToMerge.push(

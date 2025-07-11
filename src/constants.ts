@@ -42,4 +42,7 @@ export const ignores = [
   '!.vscode',
   `**/ecosystem.config.{${allJsExtensions}}`,
   '**/components.d.ts',
+  '**/vite.config.*.timestamp*',
+  '**/vitest.config.*.timestamp*',
+  '**/vite.config.ts.timestamp*',
 ];

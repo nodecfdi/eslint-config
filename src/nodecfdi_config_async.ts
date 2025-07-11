@@ -26,6 +26,8 @@ const configureConfigAsync = async (
     projectService: true,
     sonarjs: true,
     n: false,
+    nx: false,
+    nuxt: false,
   };
 
   const blocksToMerge: ConfigWithExtends[] = [
@@ -41,6 +43,7 @@ const configureConfigAsync = async (
 
   if (userConfigChoices.vitest) {
     const { vitestConfig } = await import('./configs/vitest_config.js');
+
     blocksToMerge.push(vitestConfig);
   }
 
@@ -55,9 +58,7 @@ const configureConfigAsync = async (
     const { vueExtendedConfig } = await import('./configs/vue_extended_config.js');
 
     blocksToMerge.push(...vueConfig);
-
     const resolverGlobalComponents = typeof userConfigChoices.vue === 'boolean' ? undefined : userConfigChoices.vue;
-
     blocksToMerge.push(vueExtendedConfig(resolverGlobalComponents));
   }
 
@@ -71,6 +72,18 @@ const configureConfigAsync = async (
     const { nConfig } = await import('./configs/n_config.js');
 
     blocksToMerge.push(nConfig);
+  }
+
+  if (userConfigChoices.nx) {
+    const { nxConfig } = await import('./configs/nx_config.js');
+
+    blocksToMerge.push(...nxConfig);
+  }
+
+  if (userConfigChoices.nuxt) {
+    const { nuxtConfig } = await import('./configs/nuxt_config.js');
+
+    blocksToMerge.push(nuxtConfig);
   }
 
   blocksToMerge.push(...prettierConfig, ...overridesConfig);
