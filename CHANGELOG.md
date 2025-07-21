@@ -5,11 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v3.5.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.5.0-0...v3.5.0)
+## [v3.5.1](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.5.0...v3.5.1)
+
+### Commits
+
+- fix: :adhesive_bandage: resolve missing rules and overrides for better completion [`8e7628f`](https://luffynando.github.com/nodecfdi/eslint-config/commit/8e7628f1067b7b7a5d2a38d5bd3e79ad8fcff90c)
+- chore: :arrow_up: update dependencies [`6c9d1b5`](https://luffynando.github.com/nodecfdi/eslint-config/commit/6c9d1b5fc799a08e14fae0af010c6678261f37da)
+
+## [v3.5.0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.5.0-0...v3.5.0) - 2025-07-10
 
 ### Commits
 
 - feat: :sparkles: add support to nuxt and nx configs [`2968271`](https://luffynando.github.com/nodecfdi/eslint-config/commit/29682716359a0ca667a229362bf153e4f7273c5e)
+- chore(release): :tada: 3.5.0 [`31c976b`](https://luffynando.github.com/nodecfdi/eslint-config/commit/31c976be9a5237c5c9255a462280806e743f7b15)
 - chore: :construction: ignore tsconfig [`30daaa3`](https://luffynando.github.com/nodecfdi/eslint-config/commit/30daaa301ab825f0b0e62394e928adf176d406f8)
 
 ## [v3.5.0-0](https://luffynando.github.com/nodecfdi/eslint-config/compare/v3.4.1...v3.5.0-0) - 2025-07-08
