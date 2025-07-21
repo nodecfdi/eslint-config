@@ -77,6 +77,7 @@ export const nConfig: ConfigWithExtends = {
       'error',
       {
         allowAtRootLevel: true,
+        ignores: ['existsSync', 'readFileSync'],
       },
     ],
     'n/no-unpublished-bin': 'error',

@@ -83,7 +83,7 @@ const configureConfigAsync = async (
   if (userConfigChoices.nuxt) {
     const { nuxtConfig } = await import('./configs/nuxt_config.js');
 
-    blocksToMerge.push(nuxtConfig);
+    blocksToMerge.push(...nuxtConfig);
   }
 
   blocksToMerge.push(...prettierConfig, ...overridesConfig);

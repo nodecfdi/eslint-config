@@ -77,7 +77,7 @@ const configureConfig = (
     }
 
     if (userConfigChoices.nuxt) {
-      blocksToMerge.push(nuxtConfig);
+      blocksToMerge.push(...nuxtConfig);
     }
 
     blocksToMerge.push(...prettierConfig, ...overridesConfig);
